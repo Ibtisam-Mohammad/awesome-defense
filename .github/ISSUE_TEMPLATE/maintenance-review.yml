@@ -1,0 +1,32 @@
+name: Maintenance review
+description: Report a broken link, moved project, duplicate, spam takeover, or scope/provenance concern.
+title: "Review: "
+labels:
+  - maintenance
+body:
+  - type: textarea
+    id: entry
+    attributes:
+      label: Entry
+      description: Paste the entry, URL, or section name.
+    validations:
+      required: true
+  - type: checkboxes
+    id: problem
+    attributes:
+      label: Problem
+      options:
+        - label: Broken link
+        - label: Project moved
+        - label: Duplicate URL
+        - label: Out of scope
+        - label: Scope or provenance concern
+        - label: Spam or suspicious takeover
+        - label: Other
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe what changed or what should be reviewed.
+    validations:
+      required: true

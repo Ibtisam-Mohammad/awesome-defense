@@ -1,0 +1,69 @@
+name: Resource suggestion
+description: Suggest a public resource for the list.
+title: "Add: "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      description: Use the public project, paper, dataset, standard, or tool name.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Link to the public source.
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Suggested section
+      description: Use the most specific section in the README.
+    validations:
+      required: true
+  - type: dropdown
+    id: resource_type
+    attributes:
+      label: Resource type
+      options:
+        - OSS
+        - HW
+        - Dataset
+        - Paper
+        - Standard
+        - Index
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: Explain the defence, emergency-response, unmanned-systems, sensing, C2, geospatial, simulation, logistics, or related research relevance.
+    validations:
+      required: true
+  - type: textarea
+    id: entry
+    attributes:
+      label: Proposed README entry
+      description: Use the standard list format.
+      value: "- [Name](URL) - One-sentence description. `OSS`"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Public availability and quality checks
+      options:
+        - label: The resource is public and legally accessible.
+          required: true
+        - label: The source and provenance are clear enough for a curated list.
+          required: true
+        - label: I checked whether this URL already appears in the README.
+          required: true
+        - label: The proposed metadata tags use `data/tags.json`.
+          required: true

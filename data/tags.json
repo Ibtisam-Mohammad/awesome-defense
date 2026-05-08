@@ -1,0 +1,11 @@
+{
+  "OSS": "Open-source software.",
+  "HW": "Open hardware or hardware design files.",
+  "Dataset": "Dataset, benchmark, corpus, or reusable evaluation data.",
+  "Paper": "Public paper, preprint, or academic publication.",
+  "Standard": "Protocol, standard, specification, or interoperability artifact.",
+  "Index": "Curated list, directory, or source hub.",
+  "Active": "Recently maintained or visibly active.",
+  "Archive": "Inactive, archived, or historically useful.",
+  "Dual-use": "Has both civilian and military or defence applications."
+}
