@@ -12,6 +12,12 @@
 - [Drone And UxV Autopilots](#drone-and-uxv-autopilots)
 - [Drone Hardware And FPV](#drone-hardware-and-fpv)
 - [Open Hardware, Airframes, And Vehicle Design](#open-hardware-airframes-and-vehicle-design)
+- [Power, Propulsion, And Endurance Modeling](#power-propulsion-and-endurance-modeling)
+- [Drone Payloads And Payload Integration](#drone-payloads-and-payload-integration)
+- [Drone Payload Delivery And Logistics](#drone-payload-delivery-and-logistics)
+- [Ground Control And MAVLink](#ground-control-and-mavlink)
+- [Flight Logs, Telemetry Analytics, And Incident Review](#flight-logs-telemetry-analytics-and-incident-review)
+- [Mission Planning, Survey, And Photogrammetry Workflows](#mission-planning-survey-and-photogrammetry-workflows)
 - [Contributing](#contributing)
 
 ## Legend
@@ -112,6 +118,76 @@
 - [FOS_UAV](https://github.com/rahulsarchive/FOS_UAV) - DIY open-source fixed-wing aerial mapping platform and workflow. `HW` `Archive`
 - [OpenDrone](https://github.com/ljbotero/OpenDrone) - 3D-printable quadcopter frame project with STL files and parts documentation. `HW` `Archive`
 - [eXploraVTOL](https://github.com/robustini/eXploraVTOL) - Open 3D-printable tailsitter VTOL project with STL, 3MF, and STEP design files. `HW`
+
+## Power, Propulsion, And Endurance Modeling
+
+- [FAST-UAV](https://github.com/SizingLab/FAST-UAV) - Multidisciplinary drone sizing framework with analytical models for multirotor, fixed-wing, and quad-plane UAVs. `OSS`
+- [FAST-OAD](https://github.com/fast-aircraft-design/FAST-OAD) - Open framework for rapid overall aircraft design and multidisciplinary analysis using OpenMDAO. `OSS`
+- [AeroSandbox](https://github.com/peterdsharpe/AeroSandbox) - Aircraft design optimization toolkit covering aerodynamics, propulsion, structures, and trajectory studies. `OSS` `Active`
+- [NeuralFoil](https://github.com/peterdsharpe/NeuralFoil) - Physics-informed machine-learning airfoil analysis tool for fast design loops. `OSS` `Active`
+- [RotorPy](https://github.com/spencerfolk/rotorpy) - Python multirotor simulator with aerodynamic effects, wind models, controls, and batched simulation. `OSS` `Active`
+- [PteraSoftware](https://github.com/camUrban/PteraSoftware) - Open-source aerodynamics package for flapping-wing and micro air vehicle analysis. `OSS`
+- [Gazebo ROS Battery](https://github.com/ctu-vras/gazebo_ros_battery) - Gazebo battery plugin with open-circuit model, power loads, state of charge, and thermal/internal-resistance options. `OSS`
+- [CVaR Energy Risk Deep Model](https://github.com/castacks/cvar-energy-risk-deep-model) - Multirotor flight-energy prediction and battery-risk assessment research code. `OSS`
+- [OpenAP](https://github.com/TUDelft-CNS-ATM/openap) - Open aircraft performance model and Python toolkit for performance, fuel, emissions, and trajectory studies. `OSS`
+
+## Drone Payloads And Payload Integration
+
+- [DJI Payload SDK](https://github.com/dji-sdk/Payload-SDK) - DJI SDK for developing drone-mounted payloads such as cameras, gimbals, mapping sensors, searchlights, and onboard analysis platforms. `OSS` `Dual-use`
+- [ADAPT Multi-Mission Payload](https://gitlab.kitware.com/adapt/adapt) - Open-source sUAS payload documentation, CAD references, and simulation assets for real-time onboard AI missions. `OSS` `HW`
+- [ADAPT ROS Workspace](https://gitlab.kitware.com/adapt/adapt_ros_ws) - Source workspace for Kitware's ADAPT payload software stack. `OSS`
+- [Pixhawk Standards](https://github.com/pixhawk/Pixhawk-Standards) - Open drone hardware standards including the Pixhawk Payload Bus Standard. `Standard` `HW`
+- [MAVLink](https://github.com/mavlink/mavlink) - Micro air vehicle communication protocol with camera, gimbal, payload, mission, and Remote ID message definitions. `OSS` `Standard`
+- [asv-drones-sdr](https://github.com/asv-soft/asv-drones-sdr) - Drone SDR payload project for geolocation, spectrum analysis, and specialized equipment control. `OSS` `Dual-use`
+- [STorM32 BGC](https://github.com/olliw42/storm32bgc) - Open-source 3-axis brushless gimbal controller for camera and sensor stabilization. `OSS` `HW`
+- [OpenHD](https://github.com/OpenHD/OpenHD) - Open-source digital video link ecosystem for UAV payload video and telemetry. `OSS` `Active`
+
+## Drone Payload Delivery And Logistics
+
+- [autonomous-drone](https://github.com/szebedy/autonomous-drone) - PX4, MAVROS, Gazebo, SVO, WhyCon, and EWOK research stack for autonomous drone delivery and collision-aware trajectory planning. `OSS` `Archive`
+- [UAV-EXPRESS](https://github.com/ISEC-AHU/UAV-EXPRESS) - Research code for energy-aware computation and resource scheduling in UAV delivery scenarios. `OSS`
+
+## Ground Control And MAVLink
+
+- [QGroundControl](https://github.com/mavlink/qgroundcontrol) - Cross-platform ground control station for drones. `OSS` `Active`
+- [Mission Planner](https://github.com/ArduPilot/MissionPlanner) - Ground control station for ArduPilot. `OSS` `Active`
+- [MAVSDK](https://github.com/mavlink/MAVSDK) - High-level API and libraries for MAVLink-compatible systems. `OSS` `Active`
+- [MAVROS](https://github.com/mavlink/mavros) - MAVLink communication node and gateway for ROS. `OSS` `Active`
+- [gomavlib](https://github.com/bluenviron/gomavlib) - MAVLink 1.0 and 2.0 library for Go. `OSS`
+- [mavp2p](https://github.com/bluenviron/mavp2p) - Flexible MAVLink router for serial, UDP, TCP, broadcast, Docker, and OpenWrt-style deployments. `OSS`
+
+## Flight Logs, Telemetry Analytics, And Incident Review
+
+- [PX4 Flight Review](https://github.com/PX4/flight_review) - Web application for PX4 ULog flight-log upload, analysis, 3D review, and browser-based plotting. `OSS`
+- [pyulog](https://github.com/PX4/pyulog) - Python package and command-line tools for parsing, converting, and inspecting PX4 ULog files. `OSS`
+- [ulog_cpp](https://github.com/PX4/ulog_cpp) - C++17 ULog reader and writer library for streamed or immediate flight-log processing. `OSS`
+- [PlotJuggler](https://github.com/PlotJuggler/PlotJuggler) - Time-series visualization tool with PX4 ULog, ROS, MQTT, WebSocket, UDP, and plugin support. `OSS` `Active`
+- [ARK Logloader](https://github.com/ARK-Electronics/logloader) - Automatic PX4 flight-log upload and download tooling. `OSS`
+- [DroneKit Log Analyzer](https://github.com/dronekit/dronekit-la) - Static analyzer for ArduPilot DataFlash logs and MAVLink telemetry logs. `OSS` `Archive`
+- [pymavlog](https://github.com/rmargar/pymavlog) - Lightweight Python parser for ArduPilot MAVLink binary and telemetry logs. `OSS`
+- [mavlog2csv](https://github.com/sashgorokhov/mavlog2csv) - Typed Python utility for converting ArduPilot telemetry and DataFlash logs to CSV. `OSS`
+- [pymavlink](https://github.com/ArduPilot/pymavlink) - Python MAVLink interface and utilities, including log-dump and message tooling. `OSS` `Active`
+- [px4tools](https://github.com/dronecrew/px4tools) - Python and notebook-based PX4 flight-data plotting, system identification, and control-analysis tools. `OSS` `Archive`
+- [Open DroneLog](https://github.com/arpanghosh8453/open-dronelog) - Local-first DJI and Litchi flight-log analytics dashboard. `OSS`
+- [UAV Insight Toolkit](https://github.com/Tartistbz/UAV-Insight-Toolkit) - Python telemetry-analysis dashboard for PX4 and ArduPilot logs with vibration, PID, optical-flow, and 3D trajectory review. `OSS`
+
+## Mission Planning, Survey, And Photogrammetry Workflows
+
+- [QGroundControl](https://github.com/mavlink/qgroundcontrol) - Cross-platform MAVLink ground control station with mission planning and vehicle configuration. `OSS` `Active`
+- [Mission Planner](https://github.com/ArduPilot/MissionPlanner) - ArduPilot ground control station with mission planning, log review, configuration, and simulation support. `OSS` `Active`
+- [DroneRoute](https://github.com/fcsonline/droneroute) - Open-source DJI mission planner with 3D map planning, obstacle-zone modeling, templates, sharing, and KMZ export. `OSS`
+- [GeoFlight Planner](https://github.com/OpenGeoOne/qgis-drone-flight-planner) - QGIS plugin for terrain-following photogrammetry, vertical inspections, circular paths, and Litchi-compatible outputs. `OSS`
+- [uavRmp](https://github.com/gisma/uavRmp) - R-based UAV mission-planning package for surveys, battery-aware chunking, and Pixhawk/Litchi workflows. `OSS`
+- [tmplanner](https://github.com/ethz-asl/tmplanner) - Real-time informative motion-planning framework for UAV-based terrain monitoring. `OSS` `Archive`
+- [Fields2Cover](https://github.com/Fields2Cover/Fields2Cover) - Coverage path-planning library for robotic survey, agriculture, and area-coverage missions. `OSS`
+- [OpenDroneMap](https://github.com/OpenDroneMap/ODM) - Command-line toolkit for turning aerial images into maps, point clouds, 3D models, and DEMs. `OSS`
+- [WebODM](https://github.com/WebODM/WebODM) - Web interface for commercial-grade drone image processing and photogrammetry workflows. `OSS` `Active`
+- [NodeODM](https://github.com/OpenDroneMap/NodeODM) - Lightweight REST API for aerial image processing engines such as ODM and MicMac. `OSS`
+- [OpenSfM](https://github.com/mapillary/OpenSfM) - Structure-from-motion pipeline for camera-pose recovery and 3D reconstruction from image sets. `OSS`
+- [openMVG](https://github.com/openMVG/openMVG) - Multiple-view geometry and structure-from-motion library for reproducible photogrammetry pipelines. `OSS`
+- [COLMAP](https://github.com/colmap/colmap) - General-purpose structure-from-motion and multi-view stereo photogrammetry system. `OSS`
+- [Meshroom](https://github.com/alicevision/Meshroom) - Node-based photogrammetry application built on AliceVision. `OSS`
+- [OpenAerialMap](https://github.com/hotosm/openaerialmap) - Open service and platform for sharing openly licensed aerial imagery and map layers. `OSS`
 
 ## Contributing
 
