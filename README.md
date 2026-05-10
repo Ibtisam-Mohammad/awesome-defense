@@ -30,6 +30,30 @@
 - [Radar](#radar)
 - [Remote ID](#remote-id)
 - [UTM, U-Space, Geofencing, And Airspace Compliance](#utm-u-space-geofencing-and-airspace-compliance)
+- [Counter-UAS Detection And Tracking](#counter-uas-detection-and-tracking)
+- [Counter-UAS Detection Infrastructure](#counter-uas-detection-infrastructure)
+- [AI-Assisted Drone Detection And Sensor Fusion](#ai-assisted-drone-detection-and-sensor-fusion)
+- [Air Picture, C2, And Sensor Analysis](#air-picture-c2-and-sensor-analysis)
+- [Electromagnetic, RF, Optical, And Multiphysics Simulation](#electromagnetic-rf-optical-and-multiphysics-simulation)
+- [Camouflage Detection And Remote-Sensing Tooling](#camouflage-detection-and-remote-sensing-tooling)
+- [TAK, C2, And Situational Awareness](#tak-c2-and-situational-awareness)
+- [Battlefield C2, Drone Tasking, And Shared Air Picture](#battlefield-c2-drone-tasking-and-shared-air-picture)
+- [Field Communications And Mesh](#field-communications-and-mesh)
+- [Resilient Links, Mesh, And GNSS-Denied Navigation](#resilient-links-mesh-and-gnss-denied-navigation)
+- [Space, Satellite Communications, And ISR](#space-satellite-communications-and-isr)
+- [Video, Telemetry Links, And Payload Streaming](#video-telemetry-links-and-payload-streaming)
+- [Geospatial Intelligence, Mapping, And Imagery](#geospatial-intelligence-mapping-and-imagery)
+- [Critical Infrastructure Protection And Damage Assessment](#critical-infrastructure-protection-and-damage-assessment)
+- [Emergency Response, Search And Rescue, And Disaster Mapping](#emergency-response-search-and-rescue-and-disaster-mapping)
+- [ADS-B And Air Tracking](#ads-b-and-air-tracking)
+- [Training And Simulation Interoperability](#training-and-simulation-interoperability)
+- [High-Fidelity Simulation, Digital Twins, And Synthetic Data](#high-fidelity-simulation-digital-twins-and-synthetic-data)
+- [Ground, Surface, And Underwater Robotics](#ground-surface-and-underwater-robotics)
+- [UGV Logistics, CASEVAC, And Ground Robotics](#ugv-logistics-casevac-and-ground-robotics)
+- [Maritime USVs And Naval Drone Operations](#maritime-usvs-and-naval-drone-operations)
+- [Mine Action, EOD, And Humanitarian Demining](#mine-action-eod-and-humanitarian-demining)
+- [Research Datasets](#research-datasets)
+- [Related Topics To Watch](#related-topics-to-watch)
 - [Contributing](#contributing)
 
 ## Legend
@@ -370,6 +394,413 @@
 - [RemoteIDReceiver](https://github.com/cyber-defence-campus/RemoteIDReceiver) - Offline-capable Remote ID monitoring and replay web application. `OSS`
 - [OpenARIA](https://github.com/mitre-public/open-aria) - MITRE open-source Aviation Risk Identification and Assessment tooling for aircraft location data. `OSS`
 - [DroneDetour](https://github.com/xumeng367/DroneDetour) - UAV path-planning library for detours around polygonal no-fly zones. `OSS`
+
+## Counter-UAS Detection And Tracking
+
+- [Batear](https://github.com/batear-io/batear) - ESP32-S3 acoustic drone detector with encrypted LoRa or wired Ethernet/PoE alerting. `OSS` `HW` `Dual-use`
+- [Sky-Spy](https://github.com/colonelpanichacks/Sky-Spy) - Firmware for detecting and mapping drones broadcasting Remote ID over Wi-Fi and BLE. `OSS` `Dual-use`
+- [drone-mesh-mapper](https://github.com/colonelpanichacks/drone-mesh-mapper) - ESP32 and Meshtastic bridge for mapping Remote ID detections. `OSS`
+- [sigint](https://github.com/arall/sigint) - Distributed SDR signal detection and triangulation system with ATAK integration. `OSS` `Dual-use`
+- [Anti-UAV](https://github.com/ucas-vg/Anti-UAV) - Large-scale multi-modal benchmark for UAV detection and tracking. `Dataset`
+- [Anti-UAV](https://github.com/ZhaoJ9014/Anti-UAV) - Anti-UAV detection and tracking benchmark resources. `OSS` `Dataset`
+- [MMAUD](https://github.com/ntu-aris/MMAUD) - Multi-modal anti-UAV dataset for miniature drone threats. `Dataset`
+- [DUT-Anti-UAV](https://github.com/wangdongdut/DUT-Anti-UAV) - Anti-UAV detection and tracking resources with visible, thermal, and acoustic references. `OSS` `Dataset`
+- [UAVDetectionTrackingBenchmark](https://github.com/KostadinovShalon/UAVDetectionTrackingBenchmark) - Code, configuration, and statistics for UAV detection and tracking benchmark experiments. `OSS` `Dataset`
+- [UAVDETR](https://github.com/wd-sir/UAVDETR) - DETR-based anti-drone target detection research code. `OSS`
+- [YOLOv12-BoT-SORT-ReID](https://github.com/wish44165/YOLOv12-BoT-SORT-ReID) - CVPR Anti-UAV Challenge tracking code using YOLOv12, BoT-SORT, and ReID. `OSS`
+- [Drone Detection Dataset](https://github.com/DroneDetectionThesis/Drone-detection-dataset) - IR, visible, and audio data for drone detection systems. `Dataset`
+- [SudarshanChakra Acoustic UAV Threat Detection](https://github.com/kbhujbal/SudarshanChakra-acoustic_uav_threat_detection_CNN) - Acoustic UAV detection model repository using CNN classifiers. `OSS`
+
+## Counter-UAS Detection Infrastructure
+
+- [Batear](https://github.com/batear-io/batear) - Low-cost ESP32-S3 acoustic drone detector with LoRa and Ethernet alerting paths. `OSS` `HW` `Dual-use`
+- [Sky-Spy](https://github.com/colonelpanichacks/Sky-Spy) - Remote ID detection and mapping firmware for low-cost Wi-Fi/BLE monitoring nodes. `OSS` `Dual-use`
+- [drone-mesh-mapper](https://github.com/colonelpanichacks/drone-mesh-mapper) - ESP32/Meshtastic bridge for forwarding Remote ID detections into a mesh map. `OSS`
+- [TRIDENT](https://github.com/TRIDENT-2025/TRIDENT) - Tri-modal audio, visual, and RF drone-detection framework for edge-class hardware. `OSS` `Dataset`
+- [RFClassification](https://github.com/IQTLabs/RFClassification) - IQT Labs RF signal-classification project for detecting and classifying drone communications using external RF datasets. `OSS`
+- [Drone Detection Dataset](https://github.com/DroneDetectionThesis/Drone-detection-dataset) - IR, visible, and audio dataset for evaluating drone-detection sensor combinations. `Dataset`
+- [UETT4K Anti-UAV](https://github.com/mugheessarwarawan/UETT4k-Anti-UAV) - 4K visual drone-detection dataset with annotated high-resolution imagery. `Dataset`
+- [Anti-UAV410](https://github.com/HwangBo94/Anti-UAV410) - Thermal infrared anti-UAV single-object tracking benchmark. `Dataset`
+- [MMAUD](https://github.com/ntu-aris/MMAUD) - Multi-modal anti-UAV dataset combining multiple sensing modalities for miniature drone detection. `Dataset`
+- [SAPIENT Proto Files](https://github.com/dstl/SAPIENT-Proto-Files) - DSTL protocol buffer definitions for interoperable sensor, detection, and fusion-node messaging. `OSS` `Standard`
+- [Apex SAPIENT Middleware](https://github.com/dstl/Apex-SAPIENT-Middleware) - Middleware implementation for routing, validating, filtering, archiving, and replaying SAPIENT messages. `OSS` `Standard`
+- [SAPIENT Middleware And Test Harness](https://github.com/dstl/SAPIENT-Middleware-and-Test-Harness) - Legacy SAPIENT middleware and test harness retained for historical interoperability context; prefer Apex SAPIENT Middleware for current experiments. `OSS` `Archive`
+- [Stone Soup](https://github.com/dstl/Stone-Soup) - Target tracking, state-estimation, data-association, and sensor-fusion framework. `OSS`
+- [Tracker Component Library](https://github.com/USNavalResearchLaboratory/TrackerComponentLibrary) - U.S. NRL tracking, estimation, and sensor-fusion algorithm library. `OSS`
+
+## AI-Assisted Drone Detection And Sensor Fusion
+
+- [Stone Soup](https://github.com/dstl/Stone-Soup) - Framework for target tracking, state estimation, sensor management, and multi-target data association. `OSS`
+- [Tracker Component Library](https://github.com/USNavalResearchLaboratory/TrackerComponentLibrary) - Tracking, estimation, gating, and assignment algorithms for multi-sensor fusion research. `OSS`
+- [SAPIENT Proto Files](https://github.com/dstl/SAPIENT-Proto-Files) - Sensor and fusion-node message schema for machine-to-machine detection interoperability. `OSS` `Standard`
+- [Apex SAPIENT Middleware](https://github.com/dstl/Apex-SAPIENT-Middleware) - SAPIENT middleware with validation, confidence filtering, message routing, archiving, and replay support. `OSS` `Standard`
+- [TRIDENT](https://github.com/TRIDENT-2025/TRIDENT) - Multi-sensor audio, video, and RF fusion framework for real-time drone detection. `OSS` `Dataset`
+- [MMDetection](https://github.com/open-mmlab/mmdetection) - OpenMMLab object-detection toolbox used for training and benchmarking modern detector architectures. `OSS`
+- [MMDetection3D](https://github.com/open-mmlab/mmdetection3d) - 3D object-detection toolbox for LiDAR, camera, radar-style, and multi-modal perception research. `OSS`
+- [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) - LiDAR-based 3D object detection framework with common point-cloud detection baselines. `OSS`
+- [BEVFusion](https://github.com/mit-han-lab/bevfusion) - Bird's-eye-view multi-sensor fusion research code for camera and LiDAR perception. `OSS`
+- [DeepStream Python Apps](https://github.com/NVIDIA-AI-IOT/deepstream_python_apps) - NVIDIA DeepStream Python examples for edge video analytics and multi-stream inference. `OSS`
+- [DepthAI](https://github.com/luxonis/depthai) - OAK stereo-depth and edge-AI SDK for embedded perception pipelines. `OSS` `HW`
+- [trackers](https://github.com/roboflow/trackers) - Clean implementations of SORT, ByteTrack, OC-SORT, BoT-SORT, and related multi-object trackers. `OSS` `Active`
+- [ByteTrack](https://github.com/ifzhang/ByteTrack) - Historical multi-object tracking framework focused on associating nearly every detection box. `OSS` `Archive`
+- [OC-SORT](https://github.com/noahcao/OC_SORT) - Observation-centric SORT tracker for robust motion association. `OSS`
+- [BoT-SORT](https://github.com/NirAharon/BoT-SORT) - Historical multi-object tracking baseline combining motion and appearance cues. `OSS` `Archive`
+- [Ultralytics](https://github.com/ultralytics/ultralytics) - YOLO training, inference, export, and deployment toolkit used across many edge-detection workflows. `OSS` `Active`
+- [YOLOv12-BoT-SORT-ReID](https://github.com/wish44165/YOLOv12-BoT-SORT-ReID) - Anti-UAV Challenge tracking code combining detector, tracker, and ReID components. `OSS`
+
+## Air Picture, C2, And Sensor Analysis
+
+- [Open-DIS](https://github.com/open-dis) - Repository hub for Distributed Interactive Simulation implementations used in training and mission simulation. `Index` `Standard`
+- [OpenC2SIM](https://github.com/OpenC2SIM) - Repository hub for Command-and-Control Systems to Simulation Systems interoperation artifacts. `Index` `Standard`
+- [Boomslang C2 Simulator](https://github.com/kabartsjc/boomslang-c2-sim) - Military C2 simulation tool for doctrine, exercises, effects, cost, impact, and risk modeling. `OSS`
+- [OpenAMASE](https://github.com/afrl-rq/OpenAMASE) - AFRL simulation environment for multi-UAV mission and command-and-control experimentation. `OSS`
+- [OpenUxAS](https://github.com/afrl-rq/OpenUxAS) - AFRL service-oriented autonomy framework for mission-level unmanned-system coordination. `OSS`
+- [ODINv2](https://github.com/syncpoint/ODINv2) - Open-source tactical mapping and C2IS with offline operation, Matrix collaboration, and military symbology. `OSS`
+- [milsymbol](https://github.com/spatialillusions/milsymbol) - JavaScript MIL-STD-2525 and APP-6 military symbol generator. `OSS`
+- [mil-sym-ts](https://github.com/missioncommand/mil-sym-ts) - TypeScript MIL-STD-2525D military symbol renderer. `OSS`
+- [Stone Soup](https://github.com/dstl/Stone-Soup) - Tracking and state-estimation framework for fusing observations into air-picture tracks. `OSS`
+- [Tracker Component Library](https://github.com/USNavalResearchLaboratory/TrackerComponentLibrary) - Estimation, assignment, and fusion algorithms useful for track management and sensor correlation. `OSS`
+- [RadarSimPy](https://github.com/radarsimx/radarsimpy) - Python/C++ radar simulator for waveform, target, RCS, range-Doppler, DoA, and detection analysis. `OSS`
+- [SimRadar](https://github.com/OURadar/SimRadar) - Polarimetric radar time-series emulator using motion and radar cross-section models. `OSS`
+- [Airspace Encounter Models](https://github.com/Airspace-Encounter-Models) - Repository hub for tools that model encounter geometry and airspace conflict scenarios. `Index`
+- [OpenARIA](https://github.com/mitre-public/open-aria) - Aviation risk-assessment tools for aircraft location data and operational safety analysis. `OSS`
+
+## Electromagnetic, RF, Optical, And Multiphysics Simulation
+
+- [openEMS](https://github.com/thliebig/openEMS) - Open-source finite-difference time-domain electromagnetic field solver for RF, microwave, and antenna simulation. `OSS`
+- [Meep](https://github.com/NanoComp/meep) - Free FDTD electromagnetic simulation package for wave propagation, scattering, and photonics research. `OSS`
+- [gprMax](https://github.com/gprMax/gprMax) - Open-source electromagnetic wave propagation simulator based on FDTD methods. `OSS`
+- [SCUFF-EM](https://github.com/HomerReid/scuff-em) - Boundary-element-method suite for computational electromagnetism. `OSS`
+- [LightPipes for Python](https://github.com/opticspy/lightpipes) - Optical propagation and diffraction simulation toolkit. `OSS`
+- [POPPY](https://github.com/spacetelescope/poppy) - Physical optics propagation package from STScI for diffraction and wavefront simulation. `OSS`
+- [PROPER](https://sourceforge.net/projects/proper-library/) - IDL, Matlab, and Python optical propagation library for modeling diffraction and wavefront propagation. `OSS`
+- [Lightwave Explorer](https://github.com/NickKarpowicz/LightwaveExplorer) - Open-source nonlinear optics simulator for light-matter interaction and ultrashort pulse modeling. `OSS`
+- [RadarSimPy](https://github.com/radarsimx/radarsimpy) - Radar simulator for waveform, target, RCS, and signal-processing studies that complement sensor-cued effect modeling. `OSS`
+
+## Camouflage Detection And Remote-Sensing Tooling
+
+- [Awesome Camouflage Vision](https://github.com/visionxiang/awesome-camouflaged-object-detection) - Curated index of camouflaged and concealed object detection, segmentation, tracking, and dataset resources. `Index`
+- [Awesome COD](https://github.com/Awesome-COD/awesome-cod) - Curated index of camouflaged object detection papers, datasets, and code. `Index`
+- [ZoomNeXt](https://github.com/lartpang/ZoomNeXt) - Unified image/video camouflaged object detection model and benchmark code. `OSS`
+- [DCNet](https://github.com/USTCL/DCNet) - Camouflaged instance segmentation research code. `OSS`
+- [MMRotate](https://github.com/open-mmlab/mmrotate) - OpenMMLab toolbox for rotated object detection in aerial and remote-sensing imagery. `OSS`
+- [DOTA Devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) - Development kit for the DOTA aerial-image object detection benchmark. `OSS` `Dataset`
+- [xView2 Baseline](https://github.com/DIUx-xView/xView2_baseline) - Historical baseline localization and classification models for the xView2 challenge. `OSS` `Archive`
+- [JDet](https://github.com/Jittor/JDet) - Remote-sensing object detection framework with oriented bounding-box support. `OSS`
+- [rschange](https://github.com/xwmaxwma/rschange) - Remote-sensing change-detection toolbox for developing and reproducing modern methods. `OSS`
+- [OSSOD](https://github.com/Lans1ng/OSSOD) - Semi-supervised object detection with uncurated unlabeled data for remote-sensing images. `OSS`
+
+## TAK, C2, And Situational Awareness
+
+- [TAK Server](https://github.com/TAK-Product-Center/Server) - Official TAK Server development repository. `OSS`
+- [FreeTAKServer](https://github.com/FreeTAKTeam/FreeTakServer) - TAK-compatible situational awareness server. `OSS`
+- [OpenTAKServer](https://github.com/brian7704/OpenTAKServer) - Open-source TAK server for ATAK, iTAK, and WinTAK clients. `OSS`
+- [CloudTAK](https://github.com/dfpc-coe/CloudTAK) - Open-source browser-based geospatial tools for the TAK ecosystem. `OSS`
+- [Cloud-RF TAK Server](https://github.com/Cloud-RF/tak-server) - Docker setup for TAK Server. `OSS`
+- [TAK Product Center](https://github.com/TAK-Product-Center) - Official TAK-related repository hub. `Index`
+- [Meshtastic ATAK Plugin](https://github.com/meshtastic/ATAK-Plugin) - ATAK plugin for sending Cursor-on-Target events through Meshtastic mesh devices. `OSS`
+- [takproto](https://github.com/snstac/takproto) - Python tools for sending and receiving TAK packets. `OSS`
+- [pytak](https://github.com/snstac/pytak) - Python Cursor-on-Target and TAK client library. `OSS`
+- [aircot](https://github.com/snstac/aircot) - Aircraft classifiers for TAK. `OSS`
+- [node-CoT](https://github.com/dfpc-coe/node-CoT) - Cursor-on-Target tooling for Node.js. `OSS`
+- [cotlib](https://github.com/NERVsystems/cotlib) - Go library for parsing, validating, and generating Cursor-on-Target XML messages. `OSS`
+- [ODINv2](https://github.com/syncpoint/ODINv2) - Open-source C2IS with tactical mapping, MIL-STD-2525 symbology, Matrix, and offline-first design. `OSS`
+- [mil-sym-ts](https://github.com/missioncommand/mil-sym-ts) - TypeScript MIL-STD-2525 D+ military symbol renderer. `OSS`
+- [OmniTAK iOS](https://github.com/engindearing-projects/OmniTAK-iOS) - Open-source TAK-compatible mobile client for iOS. `OSS`
+- [OmniTAK Android](https://github.com/engindearing-projects/OmniTAK-Android) - Open-source TAK-compatible mobile client for Android. `OSS`
+
+## Battlefield C2, Drone Tasking, And Shared Air Picture
+
+- [TAK Server](https://github.com/TAK-Product-Center/Server) - Official TAK Server repository for shared situational awareness and team data services. `OSS`
+- [FreeTAKServer](https://github.com/FreeTAKTeam/FreeTakServer) - Open TAK-compatible server with federation, data packages, REST API, CoT recording, and integrations. `OSS`
+- [OpenTAKServer](https://github.com/brian7704/OpenTAKServer) - Python TAK server for ATAK, iTAK, WinTAK, and web clients. `OSS`
+- [CloudTAK](https://github.com/dfpc-coe/CloudTAK) - Browser-based TAK-compatible common operating picture and situational-awareness tool. `OSS`
+- [FreeTAKUAS](https://github.com/FreeTAKTeam/FreeTAKUAS) - DJI drone app integrating PPLI, field of view, sensor point reporting, video streaming, and object detection with FreeTAKServer. `OSS`
+- [FreeTAKHub](https://github.com/FreeTAKTeam/FreeTAKHub) - Node-RED based integration component for connecting FreeTAKServer with external systems and drone feeds. `OSS`
+- [Meshtastic ATAK Plugin](https://github.com/meshtastic/ATAK-Plugin) - ATAK plugin for moving CoT events, PLI, chat, and mission data across Meshtastic meshes. `OSS`
+- [takproto](https://github.com/snstac/takproto) - Python protobuf/XML tools for sending and receiving TAK packets. `OSS`
+- [pytak](https://github.com/snstac/pytak) - Python Cursor-on-Target and TAK client library for rapid integration. `OSS`
+- [adsbcot](https://github.com/snstac/adsbcot) - ADS-B to TAK gateway for adding aircraft tracks to a shared air picture. `OSS`
+- [aiscot](https://github.com/snstac/aiscot) - AIS to TAK gateway for adding maritime vessel tracks to TAK. `OSS`
+- [inrcot](https://github.com/snstac/inrcot) - Garmin inReach to Cursor-on-Target gateway for TAK products. `OSS`
+- [DragonSync](https://github.com/alphafox02/DragonSync) - Gateway for publishing drone detections and ADS-B/UAT aircraft data into TAK/ATAK and MQTT. `OSS`
+- [node-CoT](https://github.com/dfpc-coe/node-CoT) - TypeScript Cursor-on-Target library for TAK-related integrations. `OSS`
+- [node-tak](https://github.com/dfpc-coe/node-tak) - TAK Server SDK for Node.js and TypeScript applications. `OSS`
+- [py-cot](https://github.com/wcrum/py-cot) - Python Cursor-on-Target library intended for data science and machine-learning friendly workflows. `OSS`
+- [OpenTAKRouter](https://github.com/darkplusplus/opentakrouter) - Open-source Cursor-on-Target router with ATAK support. `OSS`
+- [OpenAMASE](https://github.com/afrl-rq/OpenAMASE) - AFRL multi-UAV simulation environment for mission-level C2 experimentation. `OSS`
+- [OpenUxAS](https://github.com/afrl-rq/OpenUxAS) - AFRL autonomy framework for route planning, task ordering, and multi-vehicle coordination. `OSS`
+- [ws_uspace_control_room](https://github.com/manudelu/ws_uspace_control_room) - ROS2, PX4, MQTT, and AirSim/Unreal control room for coordinated UAV fleet management. `OSS`
+- [Project Starling](https://github.com/StarlingUAS/ProjectStarling) - Containerized UAV simulation-to-reality infrastructure for single and multi-UAV systems. `OSS`
+- [ODINv2](https://github.com/syncpoint/ODINv2) - Offline-capable open-source tactical C2IS with mapping, Matrix collaboration, and military symbology. `OSS`
+- [MAGE Server](https://github.com/ngageoint/mage-server) - NGA Mobile Awareness GEOINT Environment server for field observation collection and situational awareness. `OSS`
+- [milsymbol](https://github.com/spatialillusions/milsymbol) - Military symbol renderer for operational graphics in shared pictures. `OSS`
+
+## Field Communications And Mesh
+
+- [Meshtastic Firmware](https://github.com/meshtastic/firmware) - LoRa-based off-grid mesh communication firmware. `OSS` `Active`
+- [Meshtastic Android](https://github.com/meshtastic/Meshtastic-Android) - Android client for Meshtastic devices. `OSS`
+- [Meshtastic Apple](https://github.com/meshtastic/Meshtastic-Apple) - Apple client for Meshtastic devices. `OSS`
+- [Reticulum](https://github.com/markqvist/Reticulum) - Cryptography-based networking stack for building resilient local and wide-area networks. `OSS`
+- [RNode Firmware](https://github.com/markqvist/RNode_Firmware) - Firmware for Reticulum-compatible LoRa radio nodes. `OSS` `HW`
+- [LoRaMesher](https://github.com/LoRaMesher/LoRaMesher) - Distributed mesh communication library for LoRa devices. `OSS`
+
+## Resilient Links, Mesh, And GNSS-Denied Navigation
+
+- [OpenHD](https://github.com/OpenHD/OpenHD) - Open-source UAV digital video, telemetry, audio, and RC-control link ecosystem. `OSS` `Active`
+- [OpenHD wifibroadcast](https://github.com/OpenHD/wifibroadcast) - Raw Wi-Fi broadcast video and telemetry library with FEC and packet validation. `OSS`
+- [WFB-NG](https://github.com/svpcom/wfb-ng) - Long-range packet radio link for FPV video, telemetry, PX4, MAVLink, and RTP workflows. `OSS`
+- [OpenIPC wfb-ng-openwrt](https://github.com/OpenIPC/wfb-ng-openwrt) - WFB-NG packaging for OpenWrt-based FPV and ground-station workflows. `OSS`
+- [RubyFPV](https://github.com/RubyFPV/RubyFPV) - Open digital FPV radio system for video, telemetry, control, auxiliary, and custom data channels. `OSS`
+- [ExpressLRS](https://github.com/ExpressLRS/ExpressLRS) - Open-source RC link with telemetry, MAVLink, PWM, SBUS, and CRSF support. `OSS` `Active`
+- [MAVLink](https://github.com/mavlink/mavlink) - Lightweight drone communication protocol and message-definition repository. `OSS` `Standard`
+- [MAVLink Router](https://github.com/mavlink-router/mavlink-router) - MAVLink router for serial, TCP, UDP, logging, and multi-endpoint telemetry distribution. `OSS`
+- [MAVProxy](https://github.com/ArduPilot/MAVProxy) - Command-line MAVLink ground station, telemetry proxy, and routing tool. `OSS`
+- [MAVROS](https://github.com/mavlink/mavros) - ROS gateway for MAVLink-enabled vehicles, payloads, and companion computers. `OSS`
+- [gomavlib](https://github.com/bluenviron/gomavlib) - Go MAVLink library powering routers, monitors, and custom telemetry applications. `OSS`
+- [Meshtastic Firmware](https://github.com/meshtastic/firmware) - Low-power LoRa mesh firmware for off-grid team and sensor communications. `OSS` `Active`
+- [Reticulum](https://github.com/markqvist/Reticulum) - Cryptography-based networking stack for resilient local and wide-area networks over heterogeneous links. `OSS`
+- [RNode Firmware](https://github.com/markqvist/RNode_Firmware) - Firmware for Reticulum-compatible LoRa radio nodes. `OSS` `HW`
+- [LoRaMesher](https://github.com/LoRaMesher/LoRaMesher) - Distributed LoRa mesh communication library. `OSS`
+- [FlyNetSim](https://github.com/saburhb/FlyNetSim) - Historical synchronized UAV-network simulator combining ns-3 and ArduPilot. `OSS` `Archive`
+- [ADOS Mission Control](https://github.com/altnautica/ADOSMissionControl) - Browser-based ground control station for ArduPilot, PX4, Betaflight, and INAV drones. `OSS`
+- [ADOS Drone Agent](https://github.com/altnautica/ADOSDroneAgent) - Companion-computer agent for MAVLink proxying, video pipeline, telemetry relay, cloud connectivity, and ground-station mode. `OSS`
+- [srsRAN Project](https://github.com/srsran/srsRAN_Project) - Historical open-source 4G/5G RAN stack for private-network and cellular-link experimentation. `OSS` `Archive`
+- [OpenAirInterface 5G](https://github.com/OPENAIRINTERFACE/openairinterface5g) - Open-source 5G RAN and core components for SDR-backed cellular-network research. `OSS`
+- [Open5GS](https://github.com/open5gs/open5gs) - Open-source 4G/5G core network implementation for private cellular testbeds. `OSS`
+- [openwifi](https://github.com/open-sdr/openwifi) - Open-source IEEE 802.11 Wi-Fi baseband FPGA design, driver, and software stack. `OSS` `HW`
+- [GNSS-SDR](https://github.com/gnss-sdr/gnss-sdr) - Software-defined GNSS receiver for GNSS monitoring, analysis, and receiver research. `OSS`
+- [gnss-sdr-1pps](https://github.com/oscimp/gnss-sdr-1pps) - GNSS-SDR fork focused on 1-PPS, spoofing detection, and jamming-detection research. `OSS`
+- [WildNav](https://github.com/TIERS/wildnav) - GNSS-free drone localization by matching onboard imagery against satellite maps. `OSS`
+- [GISNav](https://github.com/hmakelin/gisnav) - ROS2 map-based visual navigation for estimating drone position from camera imagery and GIS maps. `OSS`
+- [OpenVINS](https://github.com/rpng/open_vins) - Visual-inertial navigation research platform for camera-IMU localization. `OSS`
+- [MINS](https://github.com/rpng/MINS) - Multi-sensor-aided inertial navigation system combining IMU, camera, LiDAR, GNSS, and wheel data. `OSS`
+
+## Space, Satellite Communications, And ISR
+
+- [SatDump](https://github.com/SatDump/SatDump) - Generic satellite data processing, decoding, and live reception software. `OSS`
+- [SatNOGS Client](https://gitlab.com/librespacefoundation/satnogs/satnogs-client) - Libre Space Foundation open-source satellite ground-station client. `OSS`
+- [SatNOGS Network](https://gitlab.com/librespacefoundation/satnogs/satnogs-network) - Open network for scheduling and sharing satellite ground-station observations. `OSS`
+- [gr-satellites](https://github.com/daniestevez/gr-satellites) - GNU Radio out-of-tree module for decoding telemetry from many satellites. `OSS`
+- [Skyfield](https://github.com/skyfielders/python-skyfield) - Python astronomy library for satellite positions, passes, and ephemeris calculations. `OSS`
+- [python-sgp4](https://github.com/brandon-rhodes/python-sgp4) - Python implementation of SGP4 satellite orbit propagation. `OSS`
+- [Orekit](https://gitlab.orekit.org/orekit/orekit) - Open-source space-dynamics library for orbit propagation, estimation, and mission analysis. `OSS`
+- [poliastro](https://github.com/poliastro/poliastro) - Historical Python astrodynamics and orbital mechanics library. `OSS` `Archive`
+- [Hypatia](https://github.com/snkas/hypatia) - Historical LEO satellite network simulator and visualizer. `OSS` `Archive`
+- [Orbit Predictor](https://github.com/satellogic/orbit-predictor) - Python satellite pass and orbit prediction library. `OSS`
+- [CelesTrak](https://celestrak.org/) - Public orbital element data, satellite catalog resources, and spaceflight dynamics references. `Dataset` `Dual-use`
+- [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/) - Fire Information for Resource Management System with near-real-time thermal anomaly data. `Dataset`
+- [Cesium](https://github.com/CesiumGS/cesium) - Open-source 3D geospatial visualization engine for time-dynamic tracks and globe visualization. `OSS`
+- [OpenSpace](https://github.com/OpenSpace/OpenSpace) - Open-source interactive data visualization software for space and Earth science. `OSS`
+- [WorldWind Java](https://github.com/NASAWorldWind/WorldWindJava) - NASA virtual globe SDK for geospatial visualization. `OSS` `Archive`
+
+## Video, Telemetry Links, And Payload Streaming
+
+- [OpenHD](https://github.com/OpenHD/OpenHD) - Open-source digital video link ecosystem for HD video, two-way telemetry, audio, and RC control over one channel. `OSS` `Active`
+- [OpenHD wifibroadcast](https://github.com/OpenHD/wifibroadcast) - C++ library for Wi-Fi broadcast video and telemetry streaming with FEC and packet validation. `OSS`
+- [QOpenHD](https://github.com/OpenHD/QOpenHD) - OpenHD companion application for video display, OSD, MAVLink settings, and ground-station control. `OSS`
+- [WFB-NG](https://github.com/svpcom/wfb-ng) - Long-range packet radio link based on raw Wi-Fi for FPV video, telemetry, PX4, MAVLink, and RTP workflows. `OSS`
+- [RubyFPV](https://github.com/RubyFPV/RubyFPV) - Open digital FPV radio system for video, telemetry, control, auxiliary, and custom data streams. `OSS`
+- [ExpressLRS](https://github.com/ExpressLRS/ExpressLRS) - High-performance open-source RC radio link with telemetry, MAVLink, PWM, SBUS, and CRSF support. `OSS` `Active`
+- [OpenVTx](https://github.com/OpenVTx/OpenVTx) - Open-source FPV video-transmitter firmware supporting MSP, SmartAudio, and Tramp protocols. `OSS`
+- [MAVLink Router](https://github.com/mavlink-router/mavlink-router) - MAVLink packet router for UART, UDP, TCP, logging, and multi-endpoint telemetry routing. `OSS`
+- [mavp2p](https://github.com/bluenviron/mavp2p) - Flexible MAVLink proxy, bridge, and router for serial, UDP, TCP, broadcast, Docker, and OpenWrt-style deployments. `OSS`
+- [MAVProxy](https://github.com/ArduPilot/MAVProxy) - Command-line MAVLink ground station, router, and telemetry proxy for ArduPilot-oriented workflows. `OSS`
+- [MAVROS](https://github.com/mavlink/mavros) - MAVLink communication node and gateway for ROS-based companion-computer and payload integrations. `OSS` `Active`
+- [OpenIPC Firmware](https://github.com/OpenIPC/firmware) - Alternative open firmware for IP camera hardware used in FPV and embedded video systems. `OSS`
+- [OpenIPC Waybeam VENC](https://github.com/OpenIPC/waybeam_venc) - Standalone H.265/H.264 video encoder and RTP streamer for low-latency FPV and IP camera applications. `OSS`
+- [OpenIPC Aviateur](https://github.com/OpenIPC/aviateur) - Cross-platform OpenIPC FPV ground station for Linux, Windows, and macOS. `OSS`
+
+## Geospatial Intelligence, Mapping, And Imagery
+
+- [OpenDroneMap](https://github.com/OpenDroneMap/ODM) - Command-line toolkit for drone imagery processing and reconstruction. `OSS`
+- [WebODM](https://github.com/OpenDroneMap/WebODM) - Web interface for processing aerial imagery. `OSS`
+- [DroneDB](https://github.com/DroneDB/DroneDB) - Open-source platform for geospatial data storage, visualization, and sharing. `OSS`
+- [GeoQ](https://github.com/ngageoint/geoq) - Historical NGA tasking and workflow platform for geographic event response. `OSS` `Archive`
+- [Hootenanny](https://github.com/ngageoint/hootenanny) - Geospatial conflation and data translation tools. `OSS`
+- [GeoPackage JS](https://github.com/ngageoint/geopackage-js) - JavaScript GeoPackage library. `OSS`
+- [MAGE Server](https://github.com/ngageoint/mage-server) - Mobile Awareness GEOINT Environment server. `OSS`
+- [sarpy](https://github.com/ngageoint/sarpy) - Python tools for reading, writing, and processing SAR data. `OSS`
+- [MATLAB SAR](https://github.com/ngageoint/MATLAB_SAR) - MATLAB tools for synthetic aperture radar data. `OSS`
+- [QGIS](https://github.com/qgis/QGIS) - Free and open-source geographic information system for viewing, editing, analysis, and cartography. `OSS`
+- [TorchGeo](https://github.com/microsoft/torchgeo) - PyTorch datasets, samplers, transforms, and pretrained models for geospatial data. `OSS`
+- [Raster Vision](https://github.com/azavea/raster-vision) - Deep-learning framework for satellite, aerial, and drone imagery. `OSS`
+- [segment-geospatial](https://github.com/opengeos/segment-geospatial) - Geospatial image segmentation using Segment Anything-style models. `OSS`
+- [Prithvi-EO-2.0](https://github.com/NASA-IMPACT/Prithvi-EO-2.0) - NASA IMPACT repository for the Prithvi-EO-2.0 geospatial foundation model release. `OSS`
+- [TerraTorch](https://github.com/IBM/terratorch) - Framework for fine-tuning geospatial foundation models. `OSS`
+- [RADAR](https://github.com/Syntax-Error-1337/radar) - Open-source real-time geospatial intelligence dashboard. `OSS` `Dual-use`
+- [Crucix](https://github.com/calesthio/Crucix) - Personal intelligence dashboard aggregating satellite fire detection, flight tracking, radiation monitoring, sanctions, conflict, and other open feeds. `OSS`
+- [SkyIntel](https://github.com/0xchamin/skyintel) - Open sky intelligence app and MCP server for flight and satellite tracking from public data. `OSS`
+
+## Critical Infrastructure Protection And Damage Assessment
+
+- [Ukraine Damage Mapping Tool](https://github.com/prs-eth/ukraine-damage-mapping-tool) - Open-source tool for mapping war destruction in Ukraine using Sentinel-1 time series. `OSS`
+- [Open Access Damage Detection Using Sentinel-1](https://oballinger.github.io/PWTT/) - Open-access Sentinel-1 damage-detection platform and Battle Damage Dashboard resources. `Dataset`
+- [SKAI](https://github.com/google-research/skai) - Google Research tool for automatic building damage assessment from aerial imagery. `OSS`
+- [Microsoft Building Damage Assessment](https://github.com/microsoft/building-damage-assessment) - Toolkit for building damage assessments from satellite, aerial, and SAR imagery. `OSS`
+- [xView2 Baseline](https://github.com/DIUx-xView/xView2_baseline) - Historical baseline models for post-disaster building localization and damage classification in the xView2 challenge. `OSS` `Archive`
+- [xBD Road Damage Assessment](https://github.com/seunghyeokleeme/xBD_road_damage_assessment) - Deep-learning road-damage detection and assessment with satellite imagery. `OSS`
+- [rschange](https://github.com/xwmaxwma/rschange) - Change-detection toolbox for remote-sensing imagery. `OSS`
+- [xarray-sentinel](https://github.com/bopen/xarray-sentinel) - Xarray backend for accessing and exploring Copernicus Sentinel-1 data products. `OSS`
+- [TorchGeo](https://github.com/microsoft/torchgeo) - PyTorch geospatial datasets, samplers, transforms, and pretrained models. `OSS`
+- [Raster Vision](https://github.com/azavea/raster-vision) - Deep-learning framework for satellite, aerial, and drone imagery. `OSS`
+- [OpenInfraMap](https://github.com/openinframap/openinframap) - OpenStreetMap-based infrastructure map for power, telecom, petroleum, water, and other networks. `OSS`
+- [OpenDSSDirect.py](https://github.com/dss-extensions/OpenDSSDirect.py) - Python interface to OpenDSS for electric power distribution system studies. `OSS`
+- [pandapower](https://github.com/e2nIEE/pandapower) - Python power-system analysis tool for grid modeling, power flow, and optimal power flow. `OSS`
+- [PyPSA](https://github.com/PyPSA/PyPSA) - Python for Power System Analysis, covering generation, storage, networks, and optimization. `OSS`
+- [GridCal](https://github.com/SanPen/GridCal) - Power systems simulation and optimization tool. `OSS`
+- [GridLAB-D](https://github.com/gridlab-d/gridlab-d) - Distribution-grid simulation platform. `OSS`
+- [WNTR](https://github.com/USEPA/WNTR) - EPA water network tool for resilience modeling and disruption analysis. `OSS`
+- [EPANET](https://github.com/OpenWaterAnalytics/EPANET) - Open-source hydraulic and water-quality modeling toolkit. `OSS`
+- [OpenQuake Engine](https://github.com/gem/oq-engine) - Open-source hazard and risk calculation engine for infrastructure and regional risk analysis. `OSS`
+
+## Emergency Response, Search And Rescue, And Disaster Mapping
+
+- [SAREnv](https://github.com/namurproject/SAREnv) - Dataset and evaluation framework for UAV-based search-and-rescue algorithms, scenarios, metrics, and planners. `OSS` `Dataset`
+- [SeaDronesSee](https://github.com/Ben93kie/SeaDronesSee) - Maritime search-and-rescue UAV vision benchmark with object detection, single-object tracking, and multi-object tracking tracks. `OSS` `Dataset`
+- [AIR](https://github.com/Accenture/AIR) - Aerial Inspection RetinaNet framework for detecting visual clues in drone imagery during land search-and-rescue missions. `OSS`
+- [Drone Swarm Search Environment](https://github.com/pfeinsper/drone-swarm-search) - PettingZoo-based simulation environment for drone-swarm search strategies in maritime SAR scenarios. `OSS`
+- [UAV-SaR-Tracking](https://github.com/spsingh37/UAV-SaR-Tracking) - ROS package for UAV search-and-rescue navigation experiments with reinforcement learning and PID control. `OSS`
+- [Search Management Map](https://github.com/canterbury-air-patrol/search-management-map) - Django, Leaflet, and PostGIS application for planning and managing search-and-rescue missions. `OSS`
+- [Resgrid Core](https://github.com/Resgrid/Core) - Open-source dispatch, personnel, AVL, and emergency-management platform for first-response organizations. `OSS`
+- [OpenAerialMap](https://github.com/hotosm/openaerialmap) - Open platform for sharing openly licensed aerial imagery useful for disaster mapping and humanitarian response. `OSS`
+- [HOT fAIr](https://github.com/hotosm/fAIr) - Humanitarian OpenStreetMap AI-assisted mapping service for detecting map features from satellite and UAV imagery. `OSS`
+- [Pyronear Pyro Engine](https://github.com/pyronear/pyro-engine) - Wildfire detection engine for edge devices and low-cost early-warning deployments. `OSS`
+- [Pyronear Pyro Vision](https://github.com/pyronear/pyro-vision) - Computer-vision library for wildfire detection models in PyTorch, ONNX, and edge inference workflows. `OSS`
+- [ForeFire](https://github.com/forefireAPI/forefire) - Open-source wildfire spread simulation engine for research and operational forecasting. `OSS`
+- [SimFire](https://github.com/mitrefireline/simfire) - Python wildfire simulator for reinforcement-learning and emergency-response research. `OSS`
+- [fire-rs-saop](https://github.com/laas/fire-rs-saop) - Historical situation assessment and observation-planning tools for wildfire monitoring with UAV fleets. `OSS` `Archive`
+- [OpenDrift Leeway WebGUI](https://github.com/digitalfabrik/opendrift-leeway-webgui) - Experimental web interface for OpenDrift leeway simulations in search-and-rescue operations. `OSS`
+
+## ADS-B And Air Tracking
+
+- [dump1090](https://github.com/antirez/dump1090) - Mode S / ADS-B decoder for RTL-SDR devices. `OSS`
+- [readsb](https://github.com/wiedehopf/readsb) - ADS-B decoder derived from dump1090-fa. `OSS`
+- [tar1090](https://github.com/wiedehopf/tar1090) - Web interface for aircraft tracking with readsb/dump1090-style backends. `OSS`
+- [Stratux](https://github.com/b3nn0/stratux) - Open-source DIY ADS-B and flight-data system for aviation situational awareness. `OSS` `HW`
+- [pyModeS](https://github.com/junzis/pyModeS) - Python decoder for Mode-S and ADS-B messages. `OSS`
+- [adsb_deku](https://github.com/rsadsb/adsb_deku) - Rust ADS-B decoder and terminal radar application. `OSS`
+- [dump1090_rs](https://github.com/rsadsb/dump1090_rs) - Multi-SDR Rust translation of dump1090 for ADS-B demodulation. `OSS`
+- [Tracker Component Library](https://github.com/USNavalResearchLaboratory/TrackerComponentLibrary) - NRL tracking and estimation algorithms. `OSS`
+
+## Training And Simulation Interoperability
+
+- [Open-DIS](https://github.com/open-dis) - Repository hub for Distributed Interactive Simulation implementations. `Index` `Standard`
+- [OpenC2SIM](https://github.com/OpenC2SIM) - Repository hub for Command-and-Control Simulation Interoperation artifacts and reference implementations. `Index` `Standard`
+- [DISPluginForUnreal](https://github.com/AF-GRILL/DISPluginForUnreal) - Legacy Unreal Engine 4 plugin for Distributed Interactive Simulation. `OSS` `Archive`
+- [DISPluginForUnity](https://github.com/AF-GRILL/DISPluginForUnity) - Unity plugin for Distributed Interactive Simulation. `OSS`
+- [IVCT Framework](https://github.com/IVCTool/IVCT_Framework) - Interoperability verification and certification framework for HLA federates. `OSS`
+- [NETN-FOM](https://github.com/AMSP-04/NETN-FOM) - NATO Education and Training Network Federation Object Model artifacts. `Standard`
+- [Stone Soup](https://github.com/dstl/Stone-Soup) - DSTL framework for target tracking and state estimation research. `OSS`
+- [SAPIENT Proto Files](https://github.com/dstl/SAPIENT-Proto-Files) - DSTL protocol buffer definitions for SAPIENT sensor interoperability. `OSS` `Standard`
+- [SAPIENT Middleware And Test Harness](https://github.com/dstl/SAPIENT-Middleware-and-Test-Harness) - Legacy SAPIENT middleware and test harness retained for historical interoperability context; prefer Apex SAPIENT Middleware for current experiments. `OSS` `Archive`
+
+## High-Fidelity Simulation, Digital Twins, And Synthetic Data
+
+- [Project AirSim](https://github.com/iamaisim/ProjectAirSim) - Open-source evolution of AirSim for high-fidelity drone, robot, and autonomous-system simulation in Unreal Engine. `OSS` `Active`
+- [AirSim](https://github.com/microsoft/AirSim) - Unreal/Unity simulator for drones, cars, autonomy research, PX4, ArduPilot, and synthetic-data generation. `OSS` `Archive`
+- [Drone Colosseum](https://github.com/gist-ailab/drone-colosseum) - AirSim-derived open-source simulator for autonomous robotics on Unreal Engine 5 with PX4 and ArduPilot support. `OSS`
+- [Pegasus Simulator](https://github.com/PegasusSimulator/PegasusSimulator) - NVIDIA Isaac Sim framework for multirotor simulation with PX4 and ArduPilot integration. `OSS` `Active`
+- [Gazebo Sim](https://github.com/gazebosim/gz-sim) - Open-source robotics simulator with high-fidelity physics, rendering, sensors, GUI, plugins, and transport APIs. `OSS` `Active`
+- [PX4 Gazebo Models](https://github.com/PX4/PX4-gazebo-models) - PX4-maintained Gazebo models, worlds, and helper script for local GZ simulation. `OSS`
+- [ArduPilot Gazebo](https://github.com/ArduPilot/ardupilot_gazebo) - Official ArduPilot Gazebo plugin and models for SITL simulation with current Gazebo releases. `OSS` `Active`
+- [PX4 Simulation with ROS2](https://github.com/ParsaKhaledi/px4_sim_ros2) - Dockerized PX4, ROS2, Gazebo, Nav2, and QGroundControl simulation environment. `OSS`
+- [XTDrone](https://github.com/robin-shaun/XTDrone) - PX4, ROS, and Gazebo UAV simulation platform for multi-rotor, fixed-wing, VTOL, and swarm experiments. `OSS`
+- [MRS UAV Gazebo Simulation](https://github.com/ctu-mrs/mrs_uav_gazebo_simulation) - CTU MRS metapackage for Gazebo and PX4 SITL UAV simulation. `OSS`
+- [ArduPilot Multiagent Simulation](https://github.com/aau-cns/Ardupilot_Multiagent_Simulation) - ArduPilot, ROS2, and Gazebo simulation environment for spawning and controlling multiple drones. `OSS`
+- [ws_uspace_control_room](https://github.com/manudelu/ws_uspace_control_room) - ROS2, PX4, MQTT, and AirSim/Unreal control room for coordinated UAV fleet management and digital twins. `OSS`
+- [FlyAwareV2](https://github.com/LTTM/FlyAwareV2) - Code and tooling for a multimodal cross-domain UAV urban-scene dataset combining CARLA-generated and real UAV imagery. `OSS` `Dataset`
+- [Syndrone](https://github.com/LTTM/Syndrone) - Code and tools for building and simulating the SynDrone multimodal UAV dataset. `OSS` `Dataset`
+- [Griffin](https://github.com/wang-jh18-SVM/Griffin) - Aerial-ground cooperative 3D perception benchmark using CARLA-AirSim co-simulation. `OSS` `Dataset`
+- [Baseball Avoidance Multirotor](https://github.com/nasa/Baseball-Avoidance-Multirotor-BAM) - NASA simulation for autonomous multirotor collision-avoidance research with Simulink, ROS2, Unreal, AirSim, and Colosseum interfaces. `OSS`
+
+## Ground, Surface, And Underwater Robotics
+
+- [ugv_nav4d_ros2](https://github.com/dfki-ric/ugv_nav4d_ros2) - ROS2 wrapper for 4D path planning for autonomous ground vehicles. `OSS`
+- [NASA Open Source Rover](https://github.com/nasa-jpl/open-source-rover) - Build-it-yourself six-wheel rover inspired by Mars rovers. `OSS` `HW`
+- [ArduPilot Rover And Sub](https://github.com/ArduPilot/ardupilot) - ArduPilot vehicle code for ground rovers, boats, ROVs, and submarines. `OSS` `Active`
+- [m2020-urdf-models](https://github.com/nasa-jpl/m2020-urdf-models) - Perseverance and Ingenuity URDF models for visualization. `OSS`
+
+## UGV Logistics, CASEVAC, And Ground Robotics
+
+- [Open Source Rover](https://github.com/nasa-jpl/open-source-rover) - NASA JPL open rover hardware and software project for ground robotics education and experimentation. `OSS` `HW`
+- [Linorobot](https://github.com/linorobot/linorobot) - Legacy ROS1 ground robot platform supporting 2WD, 4WD, Ackermann, and mecanum bases. `OSS` `HW` `Archive`
+- [Linorobot2](https://github.com/linorobot/linorobot2) - ROS2 version of the Linorobot autonomous ground robot stack. `OSS` `HW`
+- [Navigation2](https://github.com/ros-navigation/navigation2) - ROS2 navigation stack for localization, planning, control, behavior trees, and obstacle avoidance. `OSS` `Active`
+- [Clearpath Simulator](https://github.com/clearpathrobotics/clearpath_simulator) - ROS2/Gazebo simulator packages for Clearpath UGVs. `OSS`
+- [Husky](https://github.com/husky/husky) - Common ROS packages for the Clearpath Husky UGV platform. `OSS`
+- [Rover Robotics ROS2](https://github.com/RoverRobotics/roverrobotics_ros2) - ROS2 packages, URDFs, simulation, SLAM, and navigation support for Rover Robotics platforms. `OSS`
+- [AgileX UGV SDK](https://github.com/agilexrobotics/ugv_sdk) - SDK for AgileX UGV chassis control and integration. `OSS`
+- [AgileX Hunter ROS2](https://github.com/agilexrobotics/hunter_ros2) - ROS2 driver package for the AgileX Hunter UGV platform. `OSS`
+- [AgileX Gazebo Simulation](https://github.com/agilexrobotics/ugv_gazebo_sim) - Gazebo simulation packages and URDF models for AgileX UGV chassis. `OSS`
+- [OpenPodCar V2](https://github.com/Rak-r/OpenPodCar_V2) - Open hardware and software ROS2 platform for Ackermann autonomous ground-vehicle research. `OSS` `HW`
+- [Autoware](https://github.com/autowarefoundation/autoware) - ROS2-based autonomous driving stack and metapackage for ground-vehicle autonomy. `OSS`
+- [RELLIS-3D](https://github.com/unmannedlab/RELLIS-3D) - Multi-modal off-road robotics dataset with camera, LiDAR, GPS, IMU, and ROS bag data. `Dataset`
+- [WarNav](https://arxiv.org/abs/2511.15429) - Conflict-scene navigable-zone segmentation benchmark for autonomous ground vehicle research. `Paper` `Dataset`
+- [marsupial_simulator_ros2](https://github.com/robotics-upo/marsupial_simulator_ros2) - ROS2/Gazebo simulator for tethered UAV-UGV marsupial systems. `OSS`
+- [ROS2swarm](https://github.com/ROS2swarm/ROS2swarm) - Historical ROS2 framework and library for swarm behaviors across robot platforms. `OSS` `Archive`
+
+## Maritime USVs And Naval Drone Operations
+
+- [MOOS-IvP](https://github.com/moos-ivp/moos-ivp) - Open-source autonomy modules for robotic platforms, especially autonomous marine vehicles. `OSS`
+- [Virtual RobotX](https://github.com/osrf/vrx) - Gazebo and ROS2 simulation environment for uncrewed surface vehicle autonomy and RobotX-style tasks. `OSS` `Active`
+- [BlueOS](https://github.com/bluerobotics/BlueOS) - Open-source onboard platform for ROV, USV, and robotic-system operation, development, and expansion. `OSS`
+- [BlueOS Cockpit](https://github.com/bluerobotics/cockpit) - Cross-platform ground control station for remote vehicles, including ROVs and boats. `OSS`
+- [ArduPilot Rover And Sub](https://github.com/ArduPilot/ardupilot) - ArduPilot vehicle code for boats, surface rovers, ROVs, and submarines. `OSS` `Active`
+- [QGroundControl](https://github.com/mavlink/qgroundcontrol) - MAVLink ground control station used across aerial, surface, and underwater unmanned systems. `OSS` `Active`
+- [MAVLink](https://github.com/mavlink/mavlink) - Common messaging protocol for unmanned vehicles, payloads, GCS, and marine autopilot integrations. `OSS` `Standard`
+- [OtterROS](https://github.com/offroad-robotics/otter_ros) - ROS2 packages for research with the Maritime Robotics Otter USV. `OSS`
+- [MultiVessel Simulation](https://github.com/FieldRoboticsLab/MultiVessel_Simulation) - Virtual RobotX-based multi-vessel simulation with configurable routes and AIS-derived scenarios. `OSS`
+- [PyQuaticus](https://github.com/mit-ll-trusted-autonomy/pyquaticus) - PettingZoo multi-agent maritime environment with USV dynamics and OpenStreetMap-based aquatic regions. `OSS`
+- [Plankton](https://github.com/Liquid-ai/Plankton) - Historical ROS2/Gazebo maritime robotics simulator built from UUV Simulator components. `OSS` `Archive`
+- [UUV Simulator](https://github.com/uuvsimulator/uuv_simulator) - Gazebo and ROS packages for underwater unmanned vehicle simulation. `OSS` `Archive`
+- [Stonefish](https://github.com/patrykcieslak/stonefish) - C++ simulation library for marine robots with underwater rendering, sensors, and hydrodynamics. `OSS`
+- [Orca4](https://github.com/clydemcqueen/orca4) - ROS2 AUV project based on BlueROV2, ArduSub, Gazebo, and Navigation2. `OSS`
+- [UNav-Sim](https://github.com/open-airlab/UNav-Sim) - Unreal Engine and AirSim-based underwater robotics simulator with ROS support. `OSS`
+- [SeaDronesSee](https://github.com/Ben93kie/SeaDronesSee) - Maritime search-and-rescue UAV vision benchmark for object detection and tracking. `OSS` `Dataset`
+- [Drone Swarm Search Environment](https://github.com/pfeinsper/drone-swarm-search) - PettingZoo simulation environment for drone-swarm maritime search strategies. `OSS`
+- [aiscot](https://github.com/snstac/aiscot) - AIS to TAK gateway for integrating ship tracks into a shared operational picture. `OSS`
+
+## Mine Action, EOD, And Humanitarian Demining
+
+- [MineInsight](https://github.com/mariomlz99/MineInsight) - Multi-sensor, multi-spectral dataset for humanitarian demining robotics in off-road environments. `Dataset`
+- [MineInsight Paper](https://arxiv.org/abs/2506.04842) - Paper describing the MineInsight UGV and robotic-arm demining dataset. `Paper` `Dataset`
+- [SULAND Dataset](https://github.com/miccunifi/SULAND-Dataset) - Surface landmine detection dataset for optical-imaging research. `Dataset`
+- [Demining Research Community Seeded Field Dataset](https://zenodo.org/records/19100554) - Multi-modal seeded field dataset for landmine and UXO detection research. `Dataset`
+- [Humanitarian Demining GPR Dataset](https://zenodo.org/records/7348797) - Humanitarian demining research artifact with GPR data, reports, code references, and post-processing material. `Dataset`
+- [AMLID](https://arxiv.org/abs/2512.18738) - Adaptive multispectral landmine identification dataset for drone-based detection research. `Paper` `Dataset`
+- [TextMine](https://arxiv.org/abs/2509.15098) - LLM-powered knowledge extraction and ontology work for humanitarian mine-action documents. `Paper` `Dataset`
+
+## Research Datasets
+
+- [Anti-UAV410](https://github.com/HwangBo94/Anti-UAV410) - Thermal infrared anti-UAV tracking benchmark. `Dataset`
+- [MMAUD](https://github.com/ntu-aris/MMAUD) - Multi-modal anti-UAV dataset. `Dataset`
+- [VisDrone Dataset](https://github.com/VisDrone/VisDrone-Dataset) - Aerial image and video object detection and tracking benchmark resources. `Dataset`
+- [Drone-detection-dataset](https://github.com/DroneDetectionThesis/Drone-detection-dataset) - IR, visible, and audio drone-detection data. `Dataset`
+- [EuRoC MAV Dataset](https://projects.asl.ethz.ch/datasets/euroc-mav/) - Visual-inertial MAV datasets for SLAM and state-estimation research. `Dataset`
+- [UZH FPV Drone Racing Dataset](https://fpv.ifi.uzh.ch/datasets/) - Visual-inertial, event-camera, ground-truth, and FPV data for aggressive drone-racing state-estimation research. `Dataset`
+
+## Related Topics To Watch
+
+- [GitHub topic: uav](https://github.com/topics/uav)
+- [GitHub topic: drones](https://github.com/topics/drones)
+- [GitHub topic: drone-detection](https://github.com/topics/drone-detection)
+- [GitHub topic: counter-uas](https://github.com/topics/counter-uas)
+- [GitHub topic: sensor-fusion](https://github.com/topics/sensor-fusion)
+- [GitHub topic: directed-energy](https://github.com/topics/directed-energy)
+- [GitHub topic: remote-sensing](https://github.com/topics/remote-sensing)
+- [GitHub topic: cursor-on-target](https://github.com/topics/cursor-on-target)
+- [GitHub topic: tak](https://github.com/topics/tak)
+- [GitHub topic: mavlink](https://github.com/topics/mavlink)
+- [GitHub topic: mesh-networks](https://github.com/topics/mesh-networks)
+- [GitHub topic: ugv](https://github.com/topics/ugv)
+- [GitHub topic: landmine-detection](https://github.com/topics/landmine-detection)
+- [GitHub topic: usv](https://github.com/topics/usv)
+- [GitHub topic: maritime-robotics](https://github.com/topics/maritime-robotics)
+- [GitHub topic: satellite](https://github.com/topics/satellite)
+- [GitHub topic: satellite-imagery](https://github.com/topics/satellite-imagery)
+- [GitHub topic: additive-manufacturing](https://github.com/topics/additive-manufacturing)
+- [GitHub topic: ros2](https://github.com/topics/ros2)
 
 ## Contributing
 
