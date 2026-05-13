@@ -16,4 +16,6 @@ Briefly describe the resource or change.
 - [ ] The entry uses the standard format.
 - [ ] The description is concise and neutral.
 - [ ] Metadata tags use `data/tags.json`.
+- [ ] Duplicate URLs are intentional and reflected in `docs/duplicate-urls.md`.
+- [ ] `python3 scripts/validate_readme.py --check-duplicate-report docs/duplicate-urls.md` passes.
 - [ ] The source and provenance are clear enough for a curated list.

@@ -808,6 +808,8 @@ Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before
 
 Every entry should be useful, public, clearly described, and relevant to the repository scope.
 
+Maintenance checks and duplicate-review workflow are documented in [docs/maintenance.md](docs/maintenance.md). Allowed metadata tags are defined in [data/tags.json](data/tags.json).
+
 ## License
 
 This list is released under [CC0-1.0](LICENSE). You may copy, remix, and reuse it freely.
