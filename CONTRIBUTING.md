@@ -11,9 +11,8 @@ A resource should:
 - Fit the scope of physical defence, defence equipment, emergency response, unmanned systems, sensing, C2, geospatial tools, field communications, simulation, logistics, or related research.
 - Be useful to practitioners, researchers, maintainers, or serious learners.
 - Have a clear README, documentation, paper, dataset card, standard, or hardware description.
-- Prefer open-source software, open hardware, public papers, public datasets, public standards, or official documentation.
+- Prefer open-source software, source-available repositories, open hardware, public papers, public datasets, public standards, or official documentation.
 - Be placed in the most specific relevant section.
-
 
 ## Quality Criteria
 
@@ -52,7 +51,8 @@ Avoid:
 
 Use tags sparingly:
 
-- `OSS` - Open-source software
+- `OSS` - Open-source software with a visible open-source license
+- `Source-available` - Public source repository without a verified open-source license
 - `HW` - Open hardware or hardware design files
 - `Dataset` - Dataset, benchmark, or corpus
 - `Paper` - Public paper, preprint, or academic publication
@@ -61,11 +61,11 @@ Use tags sparingly:
 - `Active` - Recently maintained or visibly active
 - `Archive` - Inactive but historically useful
 - `Dual-use` - Has both civilian and military/defence applications
+- `Fork` - Fork retained because it has curated value distinct from, or newer than, the upstream repository
 
 The machine-readable tag vocabulary is kept in `data/tags.json`.
 
 ## Duplicate Entries
-
 
 Before adding a duplicate URL, check `docs/duplicate-urls.md` and make sure the repeated entry adds useful section-specific context.
 

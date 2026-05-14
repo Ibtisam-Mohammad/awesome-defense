@@ -21,6 +21,15 @@ from pathlib import Path
 
 EXEMPT_ENTRY_SECTIONS = {"Contents", "Related Topics To Watch"}
 TOC_EXEMPT_HEADINGS = {"Scope", "Contents", "Legend", "License"}
+GITHUB_HOSTS = {"github.com", "www.github.com"}
+
+# Keep this list tiny and limited to redirects confirmed during README curation.
+KNOWN_GITHUB_REPO_ALIASES = {
+    ("webodm", "webodm"): ("opendronemap", "webodm"),
+}
+KNOWN_GITHUB_REPO_DISPLAYS = {
+    ("opendronemap", "webodm"): ("OpenDroneMap", "WebODM"),
+}
 
 
 @dataclass(frozen=True)
@@ -188,31 +197,128 @@ def validate_tags(entries: list[Entry], allowed_tags: set[str]) -> list[str]:
     return errors
 
 
+def github_repo_parts(url: str) -> tuple[str, str] | None:
+    parsed = urllib.parse.urlsplit(url)
+    if parsed.scheme.casefold() not in {"http", "https"}:
+        return None
+    if parsed.netloc.casefold() not in GITHUB_HOSTS:
+        return None
+
+    parts = [part for part in parsed.path.strip("/").split("/") if part]
+    if len(parts) != 2:
+        return None
+
+    owner = urllib.parse.unquote(parts[0])
+    repo = re.sub(
+        r"\.git\Z",
+        "",
+        urllib.parse.unquote(parts[1]),
+        flags=re.IGNORECASE,
+    )
+    if not owner or not repo:
+        return None
+    return owner, repo
+
+
+def canonical_github_repo(owner: str, repo: str) -> tuple[str, str]:
+    key = (owner.casefold(), repo.casefold())
+    return KNOWN_GITHUB_REPO_ALIASES.get(key, key)
+
+
+def canonical_url_key(url: str) -> str:
+    github_parts = github_repo_parts(url)
+    if github_parts:
+        owner, repo = canonical_github_repo(*github_parts)
+        return f"https://github.com/{owner}/{repo}"
+    return url
+
+
+def display_url_for_key(key: str, group: list[Entry]) -> str:
+    for repo_key, display_parts in KNOWN_GITHUB_REPO_DISPLAYS.items():
+        if key == f"https://github.com/{repo_key[0]}/{repo_key[1]}":
+            owner, repo = display_parts
+            return f"https://github.com/{owner}/{repo}"
+
+    for entry in sorted(group, key=lambda item: item.line_no):
+        github_parts = github_repo_parts(entry.url)
+        if github_parts and canonical_url_key(entry.url) == key:
+            owner, repo = github_parts
+            return f"https://github.com/{owner}/{repo}"
+    return key
+
+
 def duplicate_groups(entries: list[Entry]) -> dict[str, list[Entry]]:
     by_url: defaultdict[str, list[Entry]] = defaultdict(list)
     for entry in entries:
-        by_url[entry.url].append(entry)
+        by_url[canonical_url_key(entry.url)].append(entry)
     return {url: group for url, group in by_url.items() if len(group) > 1}
 
 
-def validate_duplicates(entries: list[Entry]) -> tuple[list[str], dict[str, list[Entry]]]:
-    groups = duplicate_groups(entries)
+def normalized_name(name: str) -> str:
+    return " ".join(name.casefold().split())
+
+
+def duplicate_name_groups(entries: list[Entry]) -> dict[str, list[Entry]]:
+    by_name: defaultdict[str, list[Entry]] = defaultdict(list)
+    for entry in entries:
+        by_name[normalized_name(entry.name)].append(entry)
+
+    return {
+        name: group
+        for name, group in by_name.items()
+        if len({canonical_url_key(entry.url) for entry in group}) > 1
+    }
+
+
+def duplicate_url_sort_key(item: tuple[str, list[Entry]]) -> tuple[int, str]:
+    key, group = item
+    return -len(group), display_url_for_key(key, group)
+
+
+def validate_duplicates(
+    entries: list[Entry],
+) -> tuple[list[str], dict[str, list[Entry]], dict[str, list[Entry]]]:
+    url_groups = duplicate_groups(entries)
+    name_groups = duplicate_name_groups(entries)
     errors: list[str] = []
-    for url, group in sorted(groups.items()):
+    for key, group in sorted(url_groups.items()):
         sections = Counter(entry.section for entry in group)
         for section, count in sections.items():
             if count > 1:
-                lines = ", ".join(str(entry.line_no) for entry in group if entry.section == section)
-                errors.append(
-                    f"same-section duplicate URL in `{section}` at lines {lines}: {url}"
+                lines = ", ".join(
+                    str(entry.line_no)
+                    for entry in group
+                    if entry.section == section
                 )
-    return errors, groups
+                errors.append(
+                    "same-section duplicate URL in "
+                    f"`{section}` at lines {lines}: "
+                    f"{display_url_for_key(key, group)}"
+                )
+    for _name, group in sorted(name_groups.items()):
+        lines = ", ".join(
+            str(entry.line_no)
+            for entry in sorted(group, key=lambda item: item.line_no)
+        )
+        urls = ", ".join(
+            display_url_for_key(key, group)
+            for key in sorted({canonical_url_key(entry.url) for entry in group})
+        )
+        errors.append(
+            "duplicate display name "
+            f"`{group[0].name}` uses different URLs at lines {lines}: {urls}"
+        )
+    return errors, url_groups, name_groups
 
 
 def render_duplicate_report(entries: list[Entry], readme_path: Path) -> str:
-    groups = duplicate_groups(entries)
+    url_groups = duplicate_groups(entries)
+    name_groups = duplicate_name_groups(entries)
     total_entries = len(entries)
-    unique_urls = len({entry.url for entry in entries})
+    unique_literal_urls = len({entry.url for entry in entries})
+    unique_canonical_urls = len(
+        {canonical_url_key(entry.url) for entry in entries}
+    )
 
     lines = [
         "# Duplicate URL Report",
@@ -221,22 +327,54 @@ def render_duplicate_report(entries: list[Entry], readme_path: Path) -> str:
         "",
         "Cross-section duplicates are allowed when one resource is genuinely useful in more than one category. Use this report during review to decide whether a repeated URL is intentional or should become a single canonical entry.",
         "",
+        "GitHub repository-root URLs are normalized without network calls for scheme, host, owner/repo case, trailing slashes, and `.git` suffixes; locally confirmed repository redirects may also be grouped.",
+        "",
         "## Summary",
         "",
         f"- Resource entries: {total_entries}",
-        f"- Unique resource URLs: {unique_urls}",
-        f"- Duplicate URLs: {len(groups)}",
+        f"- Unique literal resource URLs: {unique_literal_urls}",
+        f"- Unique canonical resource URLs: {unique_canonical_urls}",
+        f"- Duplicate URL groups: {len(url_groups)}",
+        f"- Duplicate display-name groups with different URLs: {len(name_groups)}",
         "",
-        "## Duplicates",
+        "## Duplicate URLs",
         "",
     ]
 
-    for url, group in sorted(groups.items(), key=lambda item: (-len(item[1]), item[0])):
-        lines.append(f"### `{url}`")
+    if not url_groups:
+        lines.append("No duplicate URL groups.")
         lines.append("")
+
+    for key, group in sorted(url_groups.items(), key=duplicate_url_sort_key):
+        lines.append(f"### `{display_url_for_key(key, group)}`")
+        lines.append("")
+        variants = sorted({entry.url for entry in group})
+        if len(variants) > 1:
+            lines.append(
+                "Canonical-equivalent variants: "
+                + ", ".join(f"`{url}`" for url in variants)
+            )
+            lines.append("")
         for entry in sorted(group, key=lambda item: (item.section, item.line_no)):
             lines.append(
                 f"- `{entry.section}` line {entry.line_no}: {entry.name}"
+            )
+        lines.append("")
+
+    lines.extend(["## Duplicate Display Names", ""])
+    if not name_groups:
+        lines.append("No duplicate display names with different URLs.")
+        lines.append("")
+
+    for _name, group in sorted(
+        name_groups.items(),
+        key=lambda item: (item[0], item[1][0].line_no),
+    ):
+        lines.append(f"### `{group[0].name}`")
+        lines.append("")
+        for entry in sorted(group, key=lambda item: (item.section, item.line_no)):
+            lines.append(
+                f"- `{entry.section}` line {entry.line_no}: {entry.url}"
             )
         lines.append("")
 
@@ -341,7 +479,7 @@ def main() -> int:
     errors.extend(validate_contents(markdown))
     errors.extend(entry_errors)
     errors.extend(validate_tags(entries, allowed_tags))
-    duplicate_errors, groups = validate_duplicates(entries)
+    duplicate_errors, url_groups, name_groups = validate_duplicates(entries)
     errors.extend(duplicate_errors)
 
     report = render_duplicate_report(entries, readme_path)
@@ -355,8 +493,13 @@ def main() -> int:
         errors.extend(validate_external_links(markdown, args.workers, args.timeout))
 
     print(f"Resource entries: {len(entries)}")
-    print(f"Unique resource URLs: {len({entry.url for entry in entries})}")
-    print(f"Cross-section duplicate URLs: {len(groups)}")
+    print(f"Unique literal resource URLs: {len({entry.url for entry in entries})}")
+    print(
+        "Unique canonical resource URLs: "
+        f"{len({canonical_url_key(entry.url) for entry in entries})}"
+    )
+    print(f"Duplicate URL groups: {len(url_groups)}")
+    print(f"Duplicate display-name groups with different URLs: {len(name_groups)}")
 
     if errors:
         print("\nValidation failed:")

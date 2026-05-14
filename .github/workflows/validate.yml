@@ -12,6 +12,7 @@ on:
 jobs:
   readme:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,15 +25,31 @@ jobs:
       - name: Validate README structure and duplicate report
         run: python3 scripts/validate_readme.py --check-duplicate-report docs/duplicate-urls.md
 
+      - name: Audit resource metadata shape
+        run: python3 scripts/audit_resources.py --write-report /tmp/resource-audit.md --fail-on-severity high
+
+      - name: Audit source remotes
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python3 scripts/audit_resources.py --check-git --workers 24 --timeout 20 --write-report /tmp/resource-audit.md --fail-on-severity high
+
   links:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check markdown links
+      - name: Check local markdown links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress --max-concurrency 8 './**/*.md'
+          args: --config lychee.toml --offline './**/*.md'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check external markdown links
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml './**/*.md'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

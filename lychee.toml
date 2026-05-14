@@ -1,0 +1,14 @@
+verbose = "info"
+no_progress = true
+
+max_redirects = 10
+max_retries = 3
+max_concurrency = 4
+retry_wait_time = 2
+timeout = 30
+
+accept = ["100..=103", "200..=299", "429"]
+include_fragments = "anchor-only"
+
+host_concurrency = 2
+host_request_interval = "250ms"

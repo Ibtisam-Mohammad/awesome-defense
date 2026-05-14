@@ -6,3 +6,5 @@ __pycache__/
 node_modules/
 .cache/
 .tmp/
+data/audit/*.json
+docs/resource-audit.md

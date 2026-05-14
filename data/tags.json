@@ -1,5 +1,6 @@
 {
-  "OSS": "Open-source software.",
+  "OSS": "Open-source software with a visible open-source license.",
+  "Source-available": "Public source repository without a verified open-source license.",
   "HW": "Open hardware or hardware design files.",
   "Dataset": "Dataset, benchmark, corpus, or reusable evaluation data.",
   "Paper": "Public paper, preprint, or academic publication.",
@@ -7,5 +8,6 @@
   "Index": "Curated list, directory, or source hub.",
   "Active": "Recently maintained or visibly active.",
   "Archive": "Inactive, archived, or historically useful.",
-  "Dual-use": "Has both civilian and military or defence applications."
+  "Dual-use": "Has both civilian and military or defence applications.",
+  "Fork": "Fork retained because it has curated value distinct from, or newer than, the upstream repository."
 }

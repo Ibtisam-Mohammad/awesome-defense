@@ -16,6 +16,22 @@ Run the slower external link check when doing a broader maintenance pass:
 python3 scripts/validate_readme.py --check-external
 ```
 
+Run the resource audit when reviewing curation quality:
+
+```sh
+python3 scripts/audit_resources.py --check-git
+```
+
+The resource audit writes `docs/resource-audit.md`, which is ignored by git and intended as a local review queue rather than a committed report.
+
+Set `GITHUB_TOKEN` or `GH_TOKEN` and add `--github-api` when you need repository metadata such as archived status, last push date, license, stars, topics, and GitHub-native descriptions:
+
+```sh
+GITHUB_TOKEN=... python3 scripts/audit_resources.py --check-git --github-api
+```
+
+The API-backed audit also raises review prompts for unverified `OSS` licenses, stale untagged repositories, GitHub forks, low-reuse signals, and raw GitHub description suggestions that can ground README wording.
+
 ## Duplicate Review
 
 The duplicate report tracks URLs that appear in more than one section. Cross-section duplicates are allowed when the resource is genuinely useful in each category, but same-section duplicates should be removed.
