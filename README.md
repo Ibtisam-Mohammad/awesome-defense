@@ -1,6 +1,5 @@
 # Awesome Defence
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![Validation Status](https://github.com/Ibtisam-Mohammad/awesome-defense/actions/workflows/validate.yml/badge.svg)](https://github.com/Ibtisam-Mohammad/awesome-defense/actions)
 [![GitHub stars](https://img.shields.io/github/stars/Ibtisam-Mohammad/awesome-defense.svg?style=social&label=Star)](https://github.com/Ibtisam-Mohammad/awesome-defense/stargazers)
@@ -342,7 +341,7 @@
 - [trajectory_optimization](https://github.com/Zhefan-Xu/trajectory_optimization) - Historical DPMPC planner for real-time UAV trajectory planning in static environments with dynamic obstacles. `Source-available` `Archive`
 - [px4_fast_planner](https://github.com/mzahana/px4_fast_planner) - PX4 integration for real-time collision-free trajectory planning with Fast-Planner, MAVROS, and onboard sensing. `OSS` `Archive`
 - [PULP-Dronet](https://github.com/pulp-platform/pulp-dronet) - Open software, hardware, datasets, and trained networks for onboard visual navigation and collision avoidance on nano-drones. `OSS` `HW`
-- [D²SLAM](https://github.com/HKUST-Aerial-Robotics/D2SLAM) - A decentralized and distributed collaborative visual-inertial SLAM system designed specifically for autonomous aerial drone swarms. `OSS` `Paper`
+- [D²SLAM](https://github.com/HKUST-Aerial-Robotics/D2SLAM) - Decentralized collaborative visual-inertial SLAM research code for autonomous aerial drone swarms. `Source-available` `Paper`
 - [FACT](https://github.com/ZJU-FAST-Lab/FACT-Coordinate-Initialization) - A fast and active coordinate initialization system that recovers initial relative poses for vision-based drone swarms without relying on GPS. `OSS` `Paper`
 
 ## Defence Engagement Simulation And C2
@@ -403,8 +402,8 @@
 - [RemoteIDReceiver](https://github.com/cyber-defence-campus/RemoteIDReceiver) - Web application for monitoring drones using Remote ID technology, including DJI DroneID. `OSS`
 - [drone-mesh-mapper](https://github.com/colonelpanichacks/drone-mesh-mapper) - Remote ID detection and mapping bridge that can forward detections over Meshtastic. `Source-available` `Fork`
 - [Sky-Spy](https://github.com/colonelpanichacks/Sky-Spy) - Firmware for detecting and mapping drones broadcasting Remote ID over Wi-Fi and BLE. `Source-available`
-- [Drone Remote ID Spoofer](https://github.com/cyber-defence-campus/droneRemoteIDSpoofer) - A security research tool designed to craft and transmit spoofed ASTM F3411-compliant drone Remote ID packets over Wi-Fi and BLE. It supports multi-drone scenarios and real-time movement simulation via waypoint paths. `OSS` `Dual-use`
-- [OUI-Spy Remote ID Spoofer](https://github.com/colonelpanichacks/Remote-ID-Spoofer) - An ESP32-S3 firmware within the OUI-Spy ecosystem that simulates a swarm of drones broadcasting Wi-Fi Remote ID footprints. It features a Flask web interface for configuring realistic telemetry variation. `Source-available`
+- [Drone Remote ID Spoofer](https://github.com/cyber-defence-campus/droneRemoteIDSpoofer) - Remote ID test tool for ASTM F3411 message generation over Wi-Fi and BLE for receiver validation and interoperability research. `OSS` `Dual-use`
+- [OUI-Spy Remote ID Spoofer](https://github.com/colonelpanichacks/Remote-ID-Spoofer) - ESP32-S3 Remote ID transmitter and test firmware from the OUI-Spy ecosystem. `Source-available`
 
 ## UTM, U-Space, Geofencing, And Airspace Compliance
 
@@ -438,8 +437,7 @@
 - [UAVDETR](https://github.com/wd-sir/UAVDETR) - DETR-based anti-drone target detection research code. `Source-available`
 - [Drone Detection Dataset](https://github.com/DroneDetectionThesis/Drone-detection-dataset) - IR, visible, and audio data for drone detection systems. `Dataset`
 - [SudarshanChakra Acoustic UAV Threat Detection](https://github.com/kbhujbal/SudarshanChakra-acoustic_uav_threat_detection_CNN) - Acoustic UAV detection model repository using CNN classifiers. `Source-available`
-- [OUI-Spy](https://github.com/colonelpanichacks/oui-spy) - An open-source, passive detection platform targeting Seeed Studio XIAO ESP32-S3 hardware. It integrates Bluetooth Low Energy scanning, RSSI proximity tracking, and drone Remote ID packet parsing in a single portable device. `OSS` `HW` `Dual-use`
-- [Naruto RF Decoy Generator](https://github.com/deptofdefense/naruto) - A Python-based RF decoy toolkit designed to generate fake Wi-Fi drone profiles to confuse and overwhelm counter-UAS systems. It operates on cheap hardware like a Raspberry Pi and standard wireless dongles. `OSS` `Dual-use`
+- [OUI-Spy](https://github.com/colonelpanichacks/oui-spy) - Passive detection platform for Seeed Studio XIAO ESP32-S3 hardware with BLE scanning, RSSI proximity tracking, and Remote ID parsing. `Source-available` `HW` `Dual-use`
 
 ## Counter-UAS Detection Infrastructure
 
@@ -510,7 +508,7 @@
 ## Camouflage Detection And Remote-Sensing Tooling
 
 - [Awesome Camouflage Vision](https://github.com/visionxiang/awesome-camouflaged-object-detection) - Curated index of camouflaged and concealed object detection, segmentation, tracking, and dataset resources. `Index`
-- [Awesome COD](https://github.com/Awesome-COD/awesome-cod) - A highly comprehensive curated index of research papers, codebases, and datasets for camouflaged object detection (COD), covering RGB, multispectral, and polarized domains. `Index` `Active`
+- [Awesome COD](https://github.com/Awesome-COD/awesome-cod) - Curated index of research papers, codebases, and datasets for camouflaged object detection across RGB, multispectral, and polarized domains. `Index` `Active`
 - [ZoomNeXt](https://github.com/lartpang/ZoomNeXt) - Unified image/video camouflaged object detection model and benchmark code. `Source-available`
 - [DCNet](https://github.com/USTCL/DCNet) - Camouflaged instance segmentation research code. `OSS`
 - [MMRotate](https://github.com/open-mmlab/mmrotate) - OpenMMLab toolbox for rotated object detection in aerial and remote-sensing imagery. `OSS`
@@ -519,7 +517,7 @@
 - [JDet](https://github.com/Jittor/JDet) - Remote-sensing object detection framework with oriented bounding-box support. `OSS`
 - [rschange](https://github.com/xwmaxwma/rschange) - Remote-sensing change-detection toolbox for developing and reproducing modern methods. `Source-available`
 - [OSSOD](https://github.com/Lans1ng/OSSOD) - Semi-supervised object detection with uncurated unlabeled data for remote-sensing images. `Source-available`
-- [DaCOD](https://github.com/qingwei-wang/DaCOD) - Official implementation of Depth-aided Camouflaged Object Detection, incorporating depth cues to segment camouflaged targets from complex backgrounds. `OSS` `Paper`
+- [DaCOD](https://github.com/qingwei-wang/DaCOD) - Research implementation of Depth-aided Camouflaged Object Detection using depth cues for segmentation in complex backgrounds. `Source-available` `Paper`
 
 ## TAK, C2, And Situational Awareness
 
@@ -628,7 +626,7 @@
 - [Cesium](https://github.com/CesiumGS/cesium) - Open-source 3D geospatial visualization engine for time-dynamic tracks and globe visualization. `OSS`
 - [OpenSpace](https://github.com/OpenSpace/OpenSpace) - Open-source interactive data visualization software for space and Earth science. `Source-available`
 - [WorldWind Java](https://github.com/NASAWorldWind/WorldWindJava) - NASA virtual globe SDK for geospatial visualization. `Source-available` `Archive`
-- [StarPerf](https://github.com/SpaceNetLab/StarPerf_Simulator) - A performance simulation platform designed to benchmark mega-constellations like Starlink and OneWeb. It models high mobility, constellation scaling, and dynamic inter-satellite links (ISL) to estimate end-to-end network latency and coverage. `OSS` `Active`
+- [StarPerf](https://github.com/SpaceNetLab/StarPerf_Simulator) - Performance simulation platform for large satellite constellations, dynamic inter-satellite links, latency, and coverage analysis. `Source-available` `Active`
 
 ## Video, Telemetry Links, And Payload Streaming
 
@@ -646,7 +644,7 @@
 - [OpenIPC Firmware](https://github.com/OpenIPC/firmware) - Alternative open firmware for IP camera hardware used in FPV and embedded video systems. `OSS`
 - [OpenIPC Waybeam VENC](https://github.com/OpenIPC/waybeam_venc) - Standalone H.265/H.264 video encoder and RTP streamer for low-latency FPV and IP camera applications. `OSS`
 - [OpenIPC Aviateur](https://github.com/OpenIPC/aviateur) - Cross-platform OpenIPC FPV ground station for Linux, Windows, and macOS. `OSS`
-- [hx-esp32-cam-fpv](https://github.com/RomanLut/hx-esp32-cam-fpv) - A budget-friendly, open-source digital FPV system designed for ESP32-CAM and ESP32-S3 boards. It features optimized DMA video transmission, digital OSD overlays, and Forward Error Correction (FEC) to recover from packet loss without retransmission delays. `OSS` `Active`
+- [hx-esp32-cam-fpv](https://github.com/RomanLut/hx-esp32-cam-fpv) - ESP32-CAM and ESP32-S3 digital FPV experiment with DMA video transmission, OSD overlays, and forward error correction. `OSS` `Active` `Fork`
 
 ## Geospatial Intelligence, Mapping, And Imagery
 
@@ -662,17 +660,17 @@
 - [QGIS](https://github.com/qgis/QGIS) - Free and open-source geographic information system for viewing, editing, analysis, and cartography. `OSS`
 - [TorchGeo](https://github.com/microsoft/torchgeo) - PyTorch datasets, samplers, transforms, and pretrained models for geospatial data. `OSS`
 - [Raster Vision](https://github.com/azavea/raster-vision) - Deep-learning framework for satellite, aerial, and drone imagery. `OSS`
-- [segment-geospatial](https://github.com/opengeos/segment-geospatial) - A highly popular Python package (samgeo) for segmenting geospatial and satellite imagery using Segment Anything (SAM) and SAM 2, enabling automated land-cover classification and target mask generation. `OSS` `Active`
+- [segment-geospatial](https://github.com/opengeos/segment-geospatial) - Python package for segmenting geospatial and satellite imagery using Segment Anything (SAM) and SAM 2 workflows. `OSS` `Active`
 - [Prithvi-EO-2.0](https://github.com/NASA-IMPACT/Prithvi-EO-2.0) - NASA IMPACT repository for the Prithvi-EO-2.0 geospatial foundation model release. `OSS`
 - [TerraTorch](https://github.com/IBM/terratorch) - Framework for fine-tuning geospatial foundation models. `OSS`
 - [RADAR](https://github.com/Syntax-Error-1337/radar) - Open-source real-time geospatial intelligence dashboard. `OSS` `Dual-use`
 - [Crucix](https://github.com/calesthio/Crucix) - Personal intelligence dashboard aggregating satellite fire detection, flight tracking, radiation monitoring, sanctions, conflict, and other open feeds. `OSS`
 - [SkyIntel](https://github.com/0xchamin/skyintel) - Open sky intelligence app and MCP server for flight and satellite tracking from public data. `OSS`
 - [Open-CD](https://github.com/likyoo/open-cd) - An open-source remote sensing change detection toolbox based on MMSegmentation, providing unified implementations of popular architectures and benchmarks. `OSS` `Active`
-- [ChangeMamba](https://github.com/ChenHongruixuan/ChangeMamba) - A state-of-the-art spatio-temporal state space model (Mamba) framework for remote sensing binary change detection, semantic change detection, and building damage assessment. `OSS` `Active` `Paper`
+- [ChangeMamba](https://github.com/ChenHongruixuan/ChangeMamba) - Research implementation of a spatio-temporal Mamba framework for remote-sensing binary change detection, semantic change detection, and building damage assessment. `OSS` `Active` `Paper`
 - [UniChange](https://github.com/Erxucomeon/UniChange) - A unified change detection framework utilizing Multimodal Large Language Models (MLLMs) and custom prompt tokens to perform both binary and semantic change detection. `OSS` `Paper` `Active`
 - [Geo-SAM](https://github.com/coolzhao/Geo-SAM) - An interactive QGIS plugin implementing Meta's Segment Anything Model (SAM) with pre-encoded image features to enable rapid, real-time segmentation of landforms in large geospatial raster datasets. `OSS` `Active`
-- [RS2-SAM2](https://github.com/rongfu-dsb/RS2-SAM2) - Official implementation of Customized SAM2 for Referring Remote Sensing Image Segmentation, adapting Meta's Segment Anything Model 2 to segment fine-grained visual targets (such as aircraft, infrastructure, and vehicles) in satellite imagery using natural language queries. `OSS` `Paper` `Active`
+- [RS2-SAM2](https://github.com/rongfu-dsb/RS2-SAM2) - Research implementation of Customized SAM2 for referring remote-sensing image segmentation with natural-language queries. `Source-available` `Paper` `Active`
 
 ## Critical Infrastructure Protection And Damage Assessment
 
