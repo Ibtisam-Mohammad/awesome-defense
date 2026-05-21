@@ -716,8 +716,8 @@
 - [MRS UAV Gazebo Simulation](https://github.com/ctu-mrs/mrs_uav_gazebo_simulation) - CTU MRS metapackage for Gazebo and PX4 SITL UAV simulation. `OSS`
 - [ArduPilot Multiagent Simulation](https://github.com/aau-cns/Ardupilot_Multiagent_Simulation) - ArduPilot, ROS2, and Gazebo simulation environment for spawning and controlling multiple drones. `OSS`
 - [ws_uspace_control_room](https://github.com/manudelu/ws_uspace_control_room) - ROS2, PX4, MQTT, and AirSim/Unreal control room for coordinated UAV fleet management and digital twins. `Source-available`
-- [FlyAwareV2](https://github.com/LTTM/FlyAwareV2) - Code and tooling for a multimodal cross-domain UAV urban-scene dataset combining CARLA-generated and real UAV imagery. `OSS` `Dataset`
-- [Syndrone](https://github.com/LTTM/Syndrone) - Code and tools for building and simulating the SynDrone multimodal UAV dataset. `OSS` `Dataset`
+- [FlyAwareV2](https://github.com/LTTM/FlyAwareV2) - Code and tooling for a multimodal cross-domain UAV urban-scene dataset combining CARLA-generated and real UAV imagery. `OSS` `Dataset` `Active`
+- [Syndrone](https://github.com/LTTM/Syndrone) - Code and tools for building and simulating the SynDrone multimodal UAV dataset; succeeded by FlyAwareV2. `OSS` `Dataset` `Archive`
 - [Griffin](https://github.com/wang-jh18-SVM/Griffin) - Aerial-ground cooperative 3D perception benchmark using CARLA-AirSim co-simulation. `OSS` `Dataset`
 - [Baseball Avoidance Multirotor](https://github.com/nasa/Baseball-Avoidance-Multirotor-BAM) - NASA simulation for autonomous multirotor collision-avoidance research with Simulink, ROS2, Unreal, AirSim, and Colosseum interfaces. `Source-available`
 
