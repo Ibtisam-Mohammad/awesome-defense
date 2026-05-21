@@ -307,7 +307,6 @@
 - [GISNav](https://github.com/hmakelin/gisnav) - ROS2 simulation package for map-based visual navigation that estimates drone position by matching camera imagery to onboard GIS maps. `OSS`
 - [trochoids](https://github.com/castacks/trochoids) - C++ time-optimal UAV path-planning library for wind-aware Dubins and trochoidal trajectories. `OSS`
 - [autonomous_landing_uav](https://github.com/MikeS96/autonomous_landing_uav) - ROS/Gazebo autonomous landing stack with visual marker tracking, Kalman filtering, and PX4 offboard control. `OSS`
-- [Drone-Detection-YOLOv11x](https://github.com/doguilmak/Drone-Detection-YOLOv11x) - A real-time aerial target detection and tracking pipeline utilizing YOLOv11x and multi-object trackers like ByteTrack and DeepSORT. `OSS` `Active`
 
 ## Onboard Edge AI And Embedded Perception
 
@@ -326,7 +325,6 @@
 - [YoloV8 TensorRT Jetson Nano](https://github.com/Qengineering/YoloV8-TensorRT-Jetson_Nano) - Lightweight C++ YOLOv8 TensorRT implementation for Jetson Nano and Orin Nano. `OSS`
 - [Event-Orin Drone](https://github.com/tudelft/event_orin_drone) - TU Delft overview repository for a PX4, ROS2, event-camera, and Jetson Orin NX drone platform. `Source-available` `HW`
 - [LiDAR-Visual-Inertial-SLAM](https://github.com/valentinomario/LiDAR-Visual-Inertial-SLAM) - ROS2 LiDAR-visual-inertial SLAM setup for Jetson Orin NX, Livox MID360, and Arducam sensors. `OSS`
-- [yolov11-UAV-finetune](https://github.com/droneforge/yolov11-UAV-finetune) - A fine-tuned YOLOv11n (nano) model and export pipeline optimized for real-time onboard UAV detection on edge devices. `OSS`
 - [jetpack-nixos](https://github.com/anduril/jetpack-nixos) - A NixOS module for NVIDIA Jetson devices developed by Anduril Industries to enable declarative, reproducible operating system builds for edge AI hardware. `OSS` `Active` `Dual-use`
 
 ## Drone Coordination, Deconfliction, And Detect-And-Avoid
@@ -671,7 +669,7 @@
 - [QGIS](https://github.com/qgis/QGIS) - Free and open-source geographic information system for viewing, editing, analysis, and cartography. `OSS`
 - [TorchGeo](https://github.com/microsoft/torchgeo) - PyTorch datasets, samplers, transforms, and pretrained models for geospatial data. `OSS`
 - [Raster Vision](https://github.com/azavea/raster-vision) - Deep-learning framework for satellite, aerial, and drone imagery. `OSS`
-- [segment-geospatial](https://github.com/opengeos/segment-geospatial) - Geospatial image segmentation using Segment Anything-style models. `OSS`
+- [segment-geospatial](https://github.com/opengeos/segment-geospatial) - A highly popular Python package (samgeo) for segmenting geospatial and satellite imagery using Segment Anything (SAM) and SAM 2, enabling automated land-cover classification and target mask generation. `OSS` `Active`
 - [Prithvi-EO-2.0](https://github.com/NASA-IMPACT/Prithvi-EO-2.0) - NASA IMPACT repository for the Prithvi-EO-2.0 geospatial foundation model release. `OSS`
 - [TerraTorch](https://github.com/IBM/terratorch) - Framework for fine-tuning geospatial foundation models. `OSS`
 - [RADAR](https://github.com/Syntax-Error-1337/radar) - Open-source real-time geospatial intelligence dashboard. `OSS` `Dual-use`
@@ -681,6 +679,7 @@
 - [ChangeMamba](https://github.com/ChenHongruixuan/ChangeMamba) - A state-of-the-art spatio-temporal state space model (Mamba) framework for remote sensing binary change detection, semantic change detection, and building damage assessment. `OSS` `Active` `Paper`
 - [UniChange](https://github.com/Erxucomeon/UniChange) - A unified change detection framework utilizing Multimodal Large Language Models (MLLMs) and custom prompt tokens to perform both binary and semantic change detection. `OSS` `Paper` `Active`
 - [Geo-SAM](https://github.com/coolzhao/Geo-SAM) - An interactive QGIS plugin implementing Meta's Segment Anything Model (SAM) with pre-encoded image features to enable rapid, real-time segmentation of landforms in large geospatial raster datasets. `OSS` `Active`
+- [RS2-SAM2](https://github.com/rongfu-dsb/RS2-SAM2) - Official implementation of Customized SAM2 for Referring Remote Sensing Image Segmentation, adapting Meta's Segment Anything Model 2 to segment fine-grained visual targets (such as aircraft, infrastructure, and vehicles) in satellite imagery using natural language queries. `OSS` `Paper` `Active`
 
 ## Critical Infrastructure Protection And Damage Assessment
 

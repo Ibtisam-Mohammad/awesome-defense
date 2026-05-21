@@ -8,7 +8,7 @@ retry_wait_time = 2
 timeout = 30
 
 accept = ["100..=103", "200..=299", "429"]
-include_fragments = "anchor-only"
+include_fragments = true
 
 host_concurrency = 2
 host_request_interval = "250ms"
