@@ -102,6 +102,8 @@
 - [National Geospatial-Intelligence Agency](https://github.com/ngageoint) - NGA repository hub for geospatial, imagery, and mission tools. `Index`
 - [U.S. Naval Research Laboratory](https://github.com/USNavalResearchLaboratory) - NRL repository hub for tracking, networking, simulation, and related research. `Index`
 - [AFRL RQ](https://github.com/afrl-rq) - AFRL Aerospace Systems Directorate research repository hub. `Index`
+- [DARPA CriticalMAAS](https://github.com/DARPA-CRITICALMAAS) - A curated GitHub organization hosting AI pipelines, tools, and knowledge graphs developed under the DARPA Critical Mineral Assessments with AI Support (CriticalMAAS) program. It includes tools for georeferencing, data integration, and automated feature extraction from geological maps. `Index` `Active` `Dual-use`
+- [buffrs](https://github.com/helsing-ai/buffrs) - A modern package manager for Protocol Buffers developed by defense startup Helsing. It provides dependency management, registry distribution, and tooling to treat Protobuf files as first-class software components in distributed architectures. `OSS` `Active` `Dual-use`
 
 ## Defence Industrial Base, Manufacturing, And Field Repair
 
@@ -123,6 +125,7 @@
 - [ESP-IDF](https://github.com/espressif/esp-idf) - Espressif IoT development framework for ESP32-class embedded systems. `OSS`
 - [PlatformIO Core](https://github.com/platformio/platformio-core) - Cross-platform embedded development environment and package ecosystem. `OSS`
 - [Zephyr](https://github.com/zephyrproject-rtos/zephyr) - Open-source RTOS for connected embedded systems and hardware platforms. `OSS`
+- [ORNLSlicer](https://github.com/ORNLSlicer/ORNLSlicer) - An open-source advanced slicing and toolpath planning framework developed by Oak Ridge National Laboratory for Fused Deposition Modeling and Directed Energy Deposition processes. `OSS` `Active` `Dual-use`
 
 ## Drone And UxV Autopilots
 
@@ -136,6 +139,7 @@
 - [Crazyflie Firmware](https://github.com/bitcraze/crazyflie-firmware) - Firmware for Bitcraze Crazyflie nano quadcopters and related platforms. `OSS`
 - [ESP-Drone](https://github.com/espressif/esp-drone) - ESP32-based mini drone/quadcopter firmware and reference design. `OSS` `HW`
 - [dRehmFlight](https://github.com/nickrehm/dRehmFlight) - Teensy/Arduino flight controller and stabilization code for small-scale VTOL vehicles. `OSS` `HW`
+- [Madflight](https://github.com/qqqlab/madflight) - An open-source flight controller firmware and toolbox for Arduino and PlatformIO, supporting ESP32, RP2040, RP2350, and STM32. `OSS`
 
 ## Drone Hardware And FPV
 
@@ -144,6 +148,8 @@
 - [OpenHD](https://github.com/OpenHD/OpenHD) - Open-source digital video link ecosystem for UAVs and remote vehicles. `OSS` `Active`
 - [TBS Source One](https://github.com/tbs-trappy/source_one) - Open-source FPV freestyle drone frame. `HW`
 - [Agilicious](https://github.com/uzh-rpg/agilicious) - Open-source and open-hardware agile quadrotor research platform. `Source-available` `HW` `Archive`
+- [AM32 MultiRotor ESC](https://github.com/AlkaMotors/AM32-MultiRotor-ESC-firmware) - An open-source 32-bit Electronic Speed Controller (ESC) firmware for ARM-based microcontrollers, supporting DShot, ProShot, and telemetry. `OSS`
+- [Bluejay ESC](https://github.com/bird-sanctuary/bluejay) - An open-source ESC firmware for legacy 8-bit BLHeli_S hardware that enables bidirectional DShot, RPM filtering, and custom PWM frequencies. `OSS`
 
 ## Open Hardware, Airframes, And Vehicle Design
 
@@ -198,6 +204,9 @@
 - [MAVROS](https://github.com/mavlink/mavros) - MAVLink communication node and gateway for ROS. `Source-available` `Active`
 - [gomavlib](https://github.com/bluenviron/gomavlib) - MAVLink 1.0 and 2.0 library for Go. `OSS`
 - [mavp2p](https://github.com/bluenviron/mavp2p) - Flexible MAVLink router for serial, UDP, TCP, broadcast, Docker, and OpenWrt-style deployments. `OSS`
+- [mavlink-anywhere](https://github.com/alireza787b/mavlink-anywhere) - A web-based MAVLink routing dashboard and installation CLI utility that simplifies configuring and managing 'mavlink-router' on companion computers. `OSS`
+- [Asv.Drones](https://github.com/asv-soft/asv-drones) - A modern, modular Ground Control Station (GCS) application and framework built in C# (.NET) supporting PX4 and ArduPilot. `OSS`
+- [mavlink-kotlin](https://github.com/divyanshupundir/mavlink-kotlin) - A modern, high-performance, type-safe MAVLink communication library for Kotlin Multiplatform that avoids reflection. `OSS`
 
 ## Flight Logs, Telemetry Analytics, And Incident Review
 
@@ -213,6 +222,7 @@
 - [px4tools](https://github.com/dronecrew/px4tools) - Python and notebook-based PX4 flight-data plotting, system identification, and control-analysis tools. `OSS` `Archive`
 - [Open DroneLog](https://github.com/arpanghosh8453/open-dronelog) - Local-first DJI and Litchi flight-log analytics dashboard. `OSS`
 - [UAV Insight Toolkit](https://github.com/Tartistbz/UAV-Insight-Toolkit) - Python telemetry-analysis dashboard for PX4 and ArduPilot logs with vibration, PID, optical-flow, and 3D trajectory review. `OSS`
+- [TiPlot](https://github.com/tilak-io/tiplot) - An open-source 3D and 2D flight log visualization dashboard that supports PX4 (.ulg), ArduPilot (.BIN), QGroundControl (.tlog), and DJI (.DAT) formats. `OSS`
 
 ## Mission Planning, Survey, And Photogrammetry Workflows
 
@@ -241,6 +251,8 @@
 - [OpenAMASE](https://github.com/afrl-rq/OpenAMASE) - AFRL simulation environment for autonomous systems experimentation. `Source-available`
 - [OpenUxAS](https://github.com/afrl-rq/OpenUxAS) - Service-oriented autonomy framework for unmanned systems. `Source-available`
 - [Airspace Encounter Models](https://github.com/Airspace-Encounter-Models) - Repository hub for aircraft encounter simulation and safety-research models. `Index`
+- [CERLAB-UAV-Autonomy](https://github.com/Zhefan-Xu/CERLAB-UAV-Autonomy) - A versatile and modular autonomy framework for mapping, planning, and control of autonomous UAVs in dynamic environments. `OSS` `Active`
+- [NavRL](https://github.com/Zhefan-Xu/NavRL) - A reinforcement learning-based navigation framework for UAV flight in dynamic environments featuring a velocity obstacle safety shield. `OSS` `Paper`
 
 ## Guidance, Navigation, And Path Planning
 
@@ -251,6 +263,8 @@
 - [DroneDetour](https://github.com/xumeng367/DroneDetour) - Java and Android UAV path-planning library for detours around polygonal no-fly zones. `OSS`
 - [Fields2Cover](https://github.com/Fields2Cover/Fields2Cover) - Coverage path-planning library for vehicles and robotic field operations. `OSS`
 - [Aerial Autonomy Stack](https://github.com/JacopoPan/aerial-autonomy-stack) - ROS2 stack for simulating and deploying perception-based PX4/ArduPilot drone swarms. `OSS` `Active`
+- [Primitive-Swarm](https://github.com/ZJU-FAST-Lab/Primitive-Planner) - An ultra-lightweight and highly scalable motion planner for large-scale aerial drone swarms based on a motion primitive library. `OSS` `Paper`
+- [Intent-MPC](https://github.com/Zhefan-Xu/Intent-MPC) - A dynamic trajectory planning framework for drones based on intent prediction-driven model predictive control. `OSS` `Paper`
 
 ## GPS-Denied Navigation, SLAM, And Terrain Mapping
 
@@ -277,6 +291,9 @@
 - [Kimera-VIO](https://github.com/MIT-SPARK/Kimera-VIO) - Metric-semantic visual-inertial odometry library for real-time state estimation. `OSS`
 - [AI-IMU Dead-Reckoning](https://github.com/mbrossar/ai-imu-dr) - Learning-based inertial dead-reckoning research code for navigation without external fixes. `OSS`
 - [monocular-slam-drone](https://github.com/jonasctrl/monocular-slam-drone) - AirSim/ROS monocular depth, voxel mapping, and A* navigation framework for UAVs in unknown 3D environments. `OSS`
+- [VSLAM-UAV](https://github.com/bandofpv/VSLAM-UAV) - An open-source integration pipeline for Visual SLAM and Visual-Inertial Odometry (VIO) on PX4 quadcopters powered by the NVIDIA Jetson Orin Nano. `OSS`
+- [DEIO](https://github.com/arclab-hku/DEIO) - A hybrid learning-based monocular event-inertial odometry framework integrating event-based differentiable bundle adjustment with graph optimization. `OSS` `Paper`
+- [UL-VIO](https://github.com/jp4327/ulvio) - An ultra-lightweight visual-inertial odometry model with fewer than one million parameters, featuring test-time adaptation for noise robustness. `OSS` `Paper`
 
 ## Autonomous Perception, Tracking, And Guidance
 
@@ -290,6 +307,7 @@
 - [GISNav](https://github.com/hmakelin/gisnav) - ROS2 simulation package for map-based visual navigation that estimates drone position by matching camera imagery to onboard GIS maps. `OSS`
 - [trochoids](https://github.com/castacks/trochoids) - C++ time-optimal UAV path-planning library for wind-aware Dubins and trochoidal trajectories. `OSS`
 - [autonomous_landing_uav](https://github.com/MikeS96/autonomous_landing_uav) - ROS/Gazebo autonomous landing stack with visual marker tracking, Kalman filtering, and PX4 offboard control. `OSS`
+- [Drone-Detection-YOLOv11x](https://github.com/doguilmak/Drone-Detection-YOLOv11x) - A real-time aerial target detection and tracking pipeline utilizing YOLOv11x and multi-object trackers like ByteTrack and DeepSORT. `OSS` `Active`
 
 ## Onboard Edge AI And Embedded Perception
 
@@ -308,6 +326,8 @@
 - [YoloV8 TensorRT Jetson Nano](https://github.com/Qengineering/YoloV8-TensorRT-Jetson_Nano) - Lightweight C++ YOLOv8 TensorRT implementation for Jetson Nano and Orin Nano. `OSS`
 - [Event-Orin Drone](https://github.com/tudelft/event_orin_drone) - TU Delft overview repository for a PX4, ROS2, event-camera, and Jetson Orin NX drone platform. `Source-available` `HW`
 - [LiDAR-Visual-Inertial-SLAM](https://github.com/valentinomario/LiDAR-Visual-Inertial-SLAM) - ROS2 LiDAR-visual-inertial SLAM setup for Jetson Orin NX, Livox MID360, and Arducam sensors. `OSS`
+- [yolov11-UAV-finetune](https://github.com/droneforge/yolov11-UAV-finetune) - A fine-tuned YOLOv11n (nano) model and export pipeline optimized for real-time onboard UAV detection on edge devices. `OSS`
+- [jetpack-nixos](https://github.com/anduril/jetpack-nixos) - A NixOS module for NVIDIA Jetson devices developed by Anduril Industries to enable declarative, reproducible operating system builds for edge AI hardware. `OSS` `Active` `Dual-use`
 
 ## Drone Coordination, Deconfliction, And Detect-And-Avoid
 
@@ -328,6 +348,8 @@
 - [trajectory_optimization](https://github.com/Zhefan-Xu/trajectory_optimization) - Historical DPMPC planner for real-time UAV trajectory planning in static environments with dynamic obstacles. `Source-available` `Archive`
 - [px4_fast_planner](https://github.com/mzahana/px4_fast_planner) - PX4 integration for real-time collision-free trajectory planning with Fast-Planner, MAVROS, and onboard sensing. `OSS` `Archive`
 - [PULP-Dronet](https://github.com/pulp-platform/pulp-dronet) - Open software, hardware, datasets, and trained networks for onboard visual navigation and collision avoidance on nano-drones. `OSS` `HW`
+- [D²SLAM](https://github.com/HKUST-Aerial-Robotics/D2SLAM) - A decentralized and distributed collaborative visual-inertial SLAM system designed specifically for autonomous aerial drone swarms. `OSS` `Paper`
+- [FACT](https://github.com/ZJU-FAST-Lab/FACT-Coordinate-Initialization) - A fast and active coordinate initialization system that recovers initial relative poses for vision-based drone swarms without relying on GPS. `OSS` `Paper`
 
 ## Defence Engagement Simulation And C2
 
@@ -338,6 +360,7 @@
 - [OpenUxAS](https://github.com/afrl-rq/OpenUxAS) - AFRL service-oriented autonomy framework for unmanned systems and mission-level autonomy. `Source-available`
 - [DISPluginForUnreal](https://github.com/AF-GRILL/DISPluginForUnreal) - Legacy Unreal Engine 4 plugin for Distributed Interactive Simulation. `OSS` `Archive`
 - [DISPluginForUnity](https://github.com/AF-GRILL/DISPluginForUnity) - Unity plugin for Distributed Interactive Simulation. `Source-available`
+- [B-ACE](https://github.com/andrekuros/B-ACE) - An open-source Beyond Visual Range (BVR) Air Combat Environment built on the Godot Game Engine. It is designed for multi-agent reinforcement learning (MARL) research and features compliance with Gymnasium and PettingZoo standards. `OSS` `Active`
 
 ## Jamming Detection And RF Interference Monitoring
 
@@ -359,6 +382,8 @@
 - [SigMF](https://github.com/sigmf/SigMF) - Metadata standard and tooling for recorded signal datasets. `OSS` `Standard`
 - [sigint](https://github.com/arall/sigint) - Multi-protocol SDR signal detection and triangulation system that can output to ATAK. `Source-available` `Dual-use`
 - [iNTERCEPT](https://github.com/smittix/intercept) - Open-source SIGINT platform for SDR-backed signal monitoring and protocol decoding. `OSS` `Dual-use`
+- [KrakenSDR DoA](https://github.com/krakenrf/krakensdr_doa) - Core data acquisition and digital signal processing software for KrakenSDR, a 5-channel coherent radio receiver. It implements direction-of-arrival (DoA) estimation using phase-coherent algorithms like MUSIC. `OSS` `HW` `Dual-use`
+- [DF Aggregator](https://github.com/ckoval7/df-aggregator) - A networked radio direction-finding aggregator that coordinates bearing data from multiple remotely deployed KrakenSDR or KerberosSDR units. It triangulates transmitter locations in real time and plots them on a live map. `OSS`
 
 ## Radar
 
@@ -370,6 +395,7 @@
 - [software-radar](https://github.com/luigifcruz/software-radar) - Historical software-defined radar project using GNU Radio Companion and Python. `Source-available` `Archive` `Dual-use`
 - [USRP Software Defined Radar](https://github.com/jonasmc83/USRP_Software_defined_radar) - Historical USRP-based software-defined radar code with C++ and Qt visualization. `OSS` `Archive` `Dual-use`
 - [GnuRadar](https://github.com/rseal/GnuRadar) - Older USRP-based open-source software-defined radar project. `Archive` `Dual-use`
+- [Blah2 Passive Radar](https://github.com/30hours/blah2) - A real-time software-defined passive radar system utilizing Docker for simplified deployment. It processes signals from SDRplay, USRP, and KrakenSDR to generate and display delay-Doppler maps via a web-based dashboard. `OSS` `Dual-use`
 
 ## Remote ID
 
@@ -383,6 +409,8 @@
 - [RemoteIDReceiver](https://github.com/cyber-defence-campus/RemoteIDReceiver) - Web application for monitoring drones using Remote ID technology, including DJI DroneID. `OSS`
 - [drone-mesh-mapper](https://github.com/colonelpanichacks/drone-mesh-mapper) - Remote ID detection and mapping bridge that can forward detections over Meshtastic. `Source-available` `Fork`
 - [Sky-Spy](https://github.com/colonelpanichacks/Sky-Spy) - Firmware for detecting and mapping drones broadcasting Remote ID over Wi-Fi and BLE. `Source-available`
+- [Drone Remote ID Spoofer](https://github.com/cyber-defence-campus/droneRemoteIDSpoofer) - A security research tool designed to craft and transmit spoofed ASTM F3411-compliant drone Remote ID packets over Wi-Fi and BLE. It supports multi-drone scenarios and real-time movement simulation via waypoint paths. `OSS` `Dual-use`
+- [OUI-Spy Remote ID Spoofer](https://github.com/colonelpanichacks/Remote-ID-Spoofer) - An ESP32-S3 firmware within the OUI-Spy ecosystem that simulates a swarm of drones broadcasting Wi-Fi Remote ID footprints. It features a Flask web interface for configuring realistic telemetry variation. `Source-available`
 
 ## UTM, U-Space, Geofencing, And Airspace Compliance
 
@@ -417,6 +445,8 @@
 - [YOLOv12-BoT-SORT-ReID](https://github.com/wish44165/YOLOv12-BoT-SORT-ReID) - CVPR Anti-UAV Challenge tracking code using YOLOv12, BoT-SORT, and ReID. `OSS`
 - [Drone Detection Dataset](https://github.com/DroneDetectionThesis/Drone-detection-dataset) - IR, visible, and audio data for drone detection systems. `Dataset`
 - [SudarshanChakra Acoustic UAV Threat Detection](https://github.com/kbhujbal/SudarshanChakra-acoustic_uav_threat_detection_CNN) - Acoustic UAV detection model repository using CNN classifiers. `Source-available`
+- [OUI-Spy](https://github.com/colonelpanichacks/oui-spy) - An open-source, passive detection platform targeting Seeed Studio XIAO ESP32-S3 hardware. It integrates Bluetooth Low Energy scanning, RSSI proximity tracking, and drone Remote ID packet parsing in a single portable device. `OSS` `HW` `Dual-use`
+- [Naruto RF Decoy Generator](https://github.com/deptofdefense/naruto) - A Python-based RF decoy toolkit designed to generate fake Wi-Fi drone profiles to confuse and overwhelm counter-UAS systems. It operates on cheap hardware like a Raspberry Pi and standard wireless dongles. `OSS` `Dual-use`
 
 ## Counter-UAS Detection Infrastructure
 
@@ -454,6 +484,7 @@
 - [BoT-SORT](https://github.com/NirAharon/BoT-SORT) - Historical multi-object tracking baseline combining motion and appearance cues. `OSS` `Archive`
 - [Ultralytics](https://github.com/ultralytics/ultralytics) - YOLO training, inference, export, and deployment toolkit used across many edge-detection workflows. `OSS` `Active`
 - [YOLOv12-BoT-SORT-ReID](https://github.com/wish44165/YOLOv12-BoT-SORT-ReID) - Anti-UAV Challenge tracking code combining detector, tracker, and ReID components. `OSS`
+- [SMART-TRACK](https://github.com/mzahana/smart_track) - A ROS 2 multi-object tracking framework using Kalman filter-guided sensor fusion. It combines YOLOv8 detection with RGB-D and LiDAR measurements to track drones continuously through occlusion. `OSS`
 
 ## Air Picture, C2, And Sensor Analysis
 
@@ -483,11 +514,12 @@
 - [PROPER](https://sourceforge.net/projects/proper-library/) - IDL, Matlab, and Python optical propagation library for modeling diffraction and wavefront propagation. `OSS`
 - [Lightwave Explorer](https://github.com/NickKarpowicz/LightwaveExplorer) - Open-source nonlinear optics simulator for light-matter interaction and ultrashort pulse modeling. `OSS`
 - [RadarSimPy](https://github.com/radarsimx/radarsimpy) - Radar simulator for waveform, target, RCS, and signal-processing studies that complement sensor-cued effect modeling. `OSS`
+- [Palace](https://github.com/awslabs/palace) - A parallel, large-scale 3D finite element solver developed by Amazon Web Services for high-performance computational electromagnetics. It supports full-wave frequency-domain, time-domain, eigenmode, and electrostatic/magnetostatic simulations with multi-GPU acceleration. `OSS` `Active`
 
 ## Camouflage Detection And Remote-Sensing Tooling
 
 - [Awesome Camouflage Vision](https://github.com/visionxiang/awesome-camouflaged-object-detection) - Curated index of camouflaged and concealed object detection, segmentation, tracking, and dataset resources. `Index`
-- [Awesome COD](https://github.com/Awesome-COD/awesome-cod) - Curated index of camouflaged object detection papers, datasets, and code. `Index`
+- [Awesome COD](https://github.com/Awesome-COD/awesome-cod) - A highly comprehensive curated index of research papers, codebases, and datasets for camouflaged object detection (COD), covering RGB, multispectral, and polarized domains. `Index` `Active`
 - [ZoomNeXt](https://github.com/lartpang/ZoomNeXt) - Unified image/video camouflaged object detection model and benchmark code. `Source-available`
 - [DCNet](https://github.com/USTCL/DCNet) - Camouflaged instance segmentation research code. `OSS`
 - [MMRotate](https://github.com/open-mmlab/mmrotate) - OpenMMLab toolbox for rotated object detection in aerial and remote-sensing imagery. `OSS`
@@ -496,6 +528,7 @@
 - [JDet](https://github.com/Jittor/JDet) - Remote-sensing object detection framework with oriented bounding-box support. `OSS`
 - [rschange](https://github.com/xwmaxwma/rschange) - Remote-sensing change-detection toolbox for developing and reproducing modern methods. `Source-available`
 - [OSSOD](https://github.com/Lans1ng/OSSOD) - Semi-supervised object detection with uncurated unlabeled data for remote-sensing images. `Source-available`
+- [DaCOD](https://github.com/qingwei-wang/DaCOD) - Official implementation of Depth-aided Camouflaged Object Detection, incorporating depth cues to segment camouflaged targets from complex backgrounds. `OSS` `Paper`
 
 ## TAK, C2, And Situational Awareness
 
@@ -515,6 +548,8 @@
 - [mil-sym-ts](https://github.com/missioncommand/mil-sym-ts) - TypeScript MIL-STD-2525 D+ military symbol renderer. `OSS`
 - [OmniTAK iOS](https://github.com/engindearing-projects/OmniTAK-iOS) - Open-source TAK-compatible mobile client for iOS. `OSS`
 - [OmniTAK Android](https://github.com/engindearing-projects/OmniTAK-Android) - Open-source TAK-compatible mobile client for Android. `OSS`
+- [AryaOS](https://github.com/snstac/aryaos) - A custom Linux-based operating system designed by Sensors & Signals LLC for edge sensors and situational awareness. It comes pre-installed with decoders and gateways for AIS, ADS-B, and Drone Remote ID, offering full compatibility with the TAK ecosystem. `OSS` `Active` `Dual-use`
+- [OpenTakNavigation](https://github.com/L-Belluomini/OTN) - An open-source ATAK plugin designed to provide vehicle-routing and offline navigation capabilities. It utilizes OpenStreetMap datasets and the GraphHopper routing engine as a civilian-compatible alternative to proprietary plugins. `OSS` `Active`
 
 ## Battlefield C2, Drone Tasking, And Shared Air Picture
 
@@ -551,6 +586,8 @@
 - [Reticulum](https://github.com/markqvist/Reticulum) - Cryptography-based networking stack for building resilient local and wide-area networks. `Source-available`
 - [RNode Firmware](https://github.com/markqvist/RNode_Firmware) - Firmware for Reticulum-compatible LoRa radio nodes. `OSS` `HW`
 - [LoRaMesher](https://github.com/LoRaMesher/LoRaMesher) - Distributed mesh communication library for LoRa devices. `OSS`
+- [MeshCore](https://github.com/meshcore-dev/MeshCore) - A multi-platform, open-source C++ library and system designed for secure, text-based communications over LoRa radio hardware. It features lightweight hybrid routing, self-healing mesh behavior, and offline capabilities for disaster response. `OSS` `Active`
+- [dson](https://github.com/helsing-ai/dson) - A space-efficient Rust crate implementing delta-based Conflict-Free Replicated Data Types (CRDT) for JSON-like data. It was developed by defense startup Helsing to enable robust state synchronization over unstable networks. `OSS` `Active` `Dual-use`
 
 ## Resilient Links, Mesh, And GNSS-Denied Navigation
 
@@ -600,6 +637,7 @@
 - [Cesium](https://github.com/CesiumGS/cesium) - Open-source 3D geospatial visualization engine for time-dynamic tracks and globe visualization. `OSS`
 - [OpenSpace](https://github.com/OpenSpace/OpenSpace) - Open-source interactive data visualization software for space and Earth science. `Source-available`
 - [WorldWind Java](https://github.com/NASAWorldWind/WorldWindJava) - NASA virtual globe SDK for geospatial visualization. `Source-available` `Archive`
+- [StarPerf](https://github.com/SpaceNetLab/StarPerf_Simulator) - A performance simulation platform designed to benchmark mega-constellations like Starlink and OneWeb. It models high mobility, constellation scaling, and dynamic inter-satellite links (ISL) to estimate end-to-end network latency and coverage. `OSS` `Active`
 
 ## Video, Telemetry Links, And Payload Streaming
 
@@ -617,6 +655,7 @@
 - [OpenIPC Firmware](https://github.com/OpenIPC/firmware) - Alternative open firmware for IP camera hardware used in FPV and embedded video systems. `OSS`
 - [OpenIPC Waybeam VENC](https://github.com/OpenIPC/waybeam_venc) - Standalone H.265/H.264 video encoder and RTP streamer for low-latency FPV and IP camera applications. `OSS`
 - [OpenIPC Aviateur](https://github.com/OpenIPC/aviateur) - Cross-platform OpenIPC FPV ground station for Linux, Windows, and macOS. `OSS`
+- [hx-esp32-cam-fpv](https://github.com/RomanLut/hx-esp32-cam-fpv) - A budget-friendly, open-source digital FPV system designed for ESP32-CAM and ESP32-S3 boards. It features optimized DMA video transmission, digital OSD overlays, and Forward Error Correction (FEC) to recover from packet loss without retransmission delays. `OSS` `Active`
 
 ## Geospatial Intelligence, Mapping, And Imagery
 
@@ -638,6 +677,10 @@
 - [RADAR](https://github.com/Syntax-Error-1337/radar) - Open-source real-time geospatial intelligence dashboard. `OSS` `Dual-use`
 - [Crucix](https://github.com/calesthio/Crucix) - Personal intelligence dashboard aggregating satellite fire detection, flight tracking, radiation monitoring, sanctions, conflict, and other open feeds. `OSS`
 - [SkyIntel](https://github.com/0xchamin/skyintel) - Open sky intelligence app and MCP server for flight and satellite tracking from public data. `OSS`
+- [Open-CD](https://github.com/likyoo/open-cd) - An open-source remote sensing change detection toolbox based on MMSegmentation, providing unified implementations of popular architectures and benchmarks. `OSS` `Active`
+- [ChangeMamba](https://github.com/ChenHongruixuan/ChangeMamba) - A state-of-the-art spatio-temporal state space model (Mamba) framework for remote sensing binary change detection, semantic change detection, and building damage assessment. `OSS` `Active` `Paper`
+- [UniChange](https://github.com/Erxucomeon/UniChange) - A unified change detection framework utilizing Multimodal Large Language Models (MLLMs) and custom prompt tokens to perform both binary and semantic change detection. `OSS` `Paper` `Active`
+- [Geo-SAM](https://github.com/coolzhao/Geo-SAM) - An interactive QGIS plugin implementing Meta's Segment Anything Model (SAM) with pre-encoded image features to enable rapid, real-time segmentation of landforms in large geospatial raster datasets. `OSS` `Active`
 
 ## Critical Infrastructure Protection And Damage Assessment
 
@@ -746,6 +789,7 @@
 - [WarNav](https://arxiv.org/abs/2511.15429) - Conflict-scene navigable-zone segmentation benchmark for autonomous ground vehicle research. `Paper` `Dataset`
 - [marsupial_simulator_ros2](https://github.com/robotics-upo/marsupial_simulator_ros2) - ROS2/Gazebo simulator for tethered UAV-UGV marsupial systems. `OSS`
 - [ROS2swarm](https://github.com/ROS2swarm/ROS2swarm) - Historical ROS2 framework and library for swarm behaviors across robot platforms. `OSS` `Archive`
+- [ORAD-3D](https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD) - A large-scale multi-modal off-road autonomous driving dataset supporting 2D free-space, 3D occupancy, GPS path planning, VLM-driven navigation, and world modeling. `Dataset` `Active`
 
 ## Maritime USVs And Naval Drone Operations
 
