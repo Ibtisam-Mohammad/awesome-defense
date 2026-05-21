@@ -1,5 +1,11 @@
 # Awesome Defence
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![Validation Status](https://github.com/Ibtisam-Mohammad/awesome-defense/actions/workflows/validate.yml/badge.svg)](https://github.com/Ibtisam-Mohammad/awesome-defense/actions)
+[![GitHub stars](https://img.shields.io/github/stars/Ibtisam-Mohammad/awesome-defense.svg?style=social&label=Star)](https://github.com/Ibtisam-Mohammad/awesome-defense/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 > A curated list of open-source and public resources for physical defence, defence equipment, emergency-response, unmanned systems, sensing, field communications, geospatial intelligence, simulation, and command-and-control.
 
 ## Contents
