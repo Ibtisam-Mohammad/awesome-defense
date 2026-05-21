@@ -317,12 +317,8 @@
 - [NanoOWL](https://github.com/NVIDIA-AI-IOT/nanoowl) - TensorRT-optimized OWL-ViT open-vocabulary detector for Jetson Orin platforms. `OSS`
 - [Jetson Multicamera Pipelines](https://github.com/NVIDIA-AI-IOT/jetson-multicamera-pipelines) - Real-time multi-camera CV and AI pipeline examples for NVIDIA Jetson. `Source-available`
 - [jetson-inference](https://github.com/dusty-nv/jetson-inference) - NVIDIA Jetson deep-learning inference tutorials and reference applications. `OSS`
-- [EdgeYOLO](https://github.com/LSH9832/edgeyolo) - Edge-real-time object detector with source code, weights, and hyperparameters. `OSS`
-- [LEAF-YOLO](https://github.com/highquanglity/LEAF-YOLO) - Lightweight edge-real-time small-object detector for aerial imagery. `OSS`
-- [YOLOv8-lite UAV Detector](https://github.com/hawkinglai/uav_det) - Interpretable lightweight YOLOv8 detector for real-time UAV detection. `OSS`
 - [TakuNet](https://github.com/DanielRossi1/TakuNet) - Energy-efficient CNN for real-time inference on embedded UAV systems in emergency-response scenarios. `Source-available`
 - [Depth Anything for Jetson Orin](https://github.com/IRCVLab/Depth-Anything-for-Jetson-Orin) - Real-time depth-estimation pipeline optimized for NVIDIA Jetson Orin. `Source-available`
-- [YoloV8 TensorRT Jetson Nano](https://github.com/Qengineering/YoloV8-TensorRT-Jetson_Nano) - Lightweight C++ YOLOv8 TensorRT implementation for Jetson Nano and Orin Nano. `OSS`
 - [Event-Orin Drone](https://github.com/tudelft/event_orin_drone) - TU Delft overview repository for a PX4, ROS2, event-camera, and Jetson Orin NX drone platform. `Source-available` `HW`
 - [LiDAR-Visual-Inertial-SLAM](https://github.com/valentinomario/LiDAR-Visual-Inertial-SLAM) - ROS2 LiDAR-visual-inertial SLAM setup for Jetson Orin NX, Livox MID360, and Arducam sensors. `OSS`
 - [jetpack-nixos](https://github.com/anduril/jetpack-nixos) - A NixOS module for NVIDIA Jetson devices developed by Anduril Industries to enable declarative, reproducible operating system builds for edge AI hardware. `OSS` `Active` `Dual-use`
@@ -440,7 +436,6 @@
 - [DUT-Anti-UAV](https://github.com/wangdongdut/DUT-Anti-UAV) - Anti-UAV detection and tracking resources with visible, thermal, and acoustic references. `OSS` `Dataset`
 - [UAVDetectionTrackingBenchmark](https://github.com/KostadinovShalon/UAVDetectionTrackingBenchmark) - Code, configuration, and statistics for UAV detection and tracking benchmark experiments. `Source-available` `Dataset`
 - [UAVDETR](https://github.com/wd-sir/UAVDETR) - DETR-based anti-drone target detection research code. `Source-available`
-- [YOLOv12-BoT-SORT-ReID](https://github.com/wish44165/YOLOv12-BoT-SORT-ReID) - CVPR Anti-UAV Challenge tracking code using YOLOv12, BoT-SORT, and ReID. `OSS`
 - [Drone Detection Dataset](https://github.com/DroneDetectionThesis/Drone-detection-dataset) - IR, visible, and audio data for drone detection systems. `Dataset`
 - [SudarshanChakra Acoustic UAV Threat Detection](https://github.com/kbhujbal/SudarshanChakra-acoustic_uav_threat_detection_CNN) - Acoustic UAV detection model repository using CNN classifiers. `Source-available`
 - [OUI-Spy](https://github.com/colonelpanichacks/oui-spy) - An open-source, passive detection platform targeting Seeed Studio XIAO ESP32-S3 hardware. It integrates Bluetooth Low Energy scanning, RSSI proximity tracking, and drone Remote ID packet parsing in a single portable device. `OSS` `HW` `Dual-use`
@@ -479,9 +474,7 @@
 - [trackers](https://github.com/roboflow/trackers) - Clean implementations of SORT, ByteTrack, OC-SORT, BoT-SORT, and related multi-object trackers. `OSS` `Active`
 - [ByteTrack](https://github.com/ifzhang/ByteTrack) - Historical multi-object tracking framework focused on associating nearly every detection box. `OSS` `Archive`
 - [OC-SORT](https://github.com/noahcao/OC_SORT) - Observation-centric SORT tracker for robust motion association. `OSS`
-- [BoT-SORT](https://github.com/NirAharon/BoT-SORT) - Historical multi-object tracking baseline combining motion and appearance cues. `OSS` `Archive`
 - [Ultralytics](https://github.com/ultralytics/ultralytics) - YOLO training, inference, export, and deployment toolkit used across many edge-detection workflows. `OSS` `Active`
-- [YOLOv12-BoT-SORT-ReID](https://github.com/wish44165/YOLOv12-BoT-SORT-ReID) - Anti-UAV Challenge tracking code combining detector, tracker, and ReID components. `OSS`
 - [SMART-TRACK](https://github.com/mzahana/smart_track) - A ROS 2 multi-object tracking framework using Kalman filter-guided sensor fusion. It combines YOLOv8 detection with RGB-D and LiDAR measurements to track drones continuously through occlusion. `OSS`
 
 ## Air Picture, C2, And Sensor Analysis
